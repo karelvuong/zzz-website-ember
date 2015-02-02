@@ -1,7 +1,7 @@
 {
-  "name": "karel-ember",
+  "name": "karel",
   "version": "0.0.0",
-  "description": "Small description for karel-ember goes here",
+  "description": "Small description for karel goes here",
   "private": true,
   "directories": {
     "doc": "doc",

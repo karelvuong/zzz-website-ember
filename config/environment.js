@@ -2,8 +2,8 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'karel-ember',
-    podModulePrefix: 'karel-ember/pods',
+    modulePrefix: 'karel',
+    podModulePrefix: 'karel/pods',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
