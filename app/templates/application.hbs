@@ -1,28 +1,32 @@
-<header class="header--primary">
+<header class="header--site">
   <div class="container">
-    <div class="row">
-      <div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-      <div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-      <div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-    </div>
+    {{#link-to 'home'}}<span class="header--site_logo pull-left"></span>{{/link-to}}
+
+    <ul class="pull-right">
+      {{#link-to 'resume' class='header--site_link'}}About{{/link-to}}
+      {{#link-to 'resume' class='header--site_link'}}Posts{{/link-to}}
+      {{#link-to 'resume' class='header--site_link'}}Work{{/link-to}}
+      {{#link-to 'resume' class='header--site_link'}}Resume{{/link-to}}
+    </ul>
   </div>
 </header>
 
-<h2 id="title">Welcome to Ember.js</h2>
+<div class="page">
+  {{outlet}}
+</div>
 
-{{outlet}}
+<footer class="footer--site">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p>Hey there</p>
+      </div>
+      <div class="col-md-3">
+        <p>Posts</p>
+      </div>
+      <div class="col-md-3">
+        <p>Social</p>
+      </div>
+    </div>
+  </div>
+</footer>

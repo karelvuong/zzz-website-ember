@@ -1,0 +1,32 @@
+.header--site {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid #eee;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header--site_logo {
+  background: url(images/logo.svg) no-repeat center center;
+  background-size: 40px 30px;
+  display: inline-block;
+  height: 30px;
+  margin: 10px 0;
+  width: 30px;
+}
+
+.header--site_link {
+  color: #7B7F82;
+  font-size: 12px;
+  line-height: 50px;
+
+  &:hover {
+    color: #168EEA;
+  }
+
+  & + & {
+    margin-left: 20px;
+  }
+}
