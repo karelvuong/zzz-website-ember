@@ -3,9 +3,9 @@
     {{#link-to 'home'}}<span class="header--site_logo pull-left"></span>{{/link-to}}
 
     <ul class="pull-right">
-      {{#link-to 'resume' class='header--site_link'}}About{{/link-to}}
-      {{#link-to 'resume' class='header--site_link'}}Posts{{/link-to}}
-      {{#link-to 'resume' class='header--site_link'}}Work{{/link-to}}
+      {{#link-to 'about' class='header--site_link'}}About{{/link-to}}
+      {{#link-to 'posts' class='header--site_link'}}Posts{{/link-to}}
+      {{#link-to 'work' class='header--site_link'}}Work{{/link-to}}
       {{#link-to 'resume' class='header--site_link'}}Resume{{/link-to}}
     </ul>
   </div>
@@ -19,13 +19,19 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <p>Hey there</p>
+        <p>{{#link-to 'home' class="footer--site_name"}}Karel Vuong{{/link-to}}</p>
       </div>
       <div class="col-md-3">
         <p>Posts</p>
+        <p>Work</p>
+        <p>Resume</p>
       </div>
       <div class="col-md-3">
-        <p>Social</p>
+        <a class="section--social_button bg-clr--dribbble" href="https://dribbble.com/karelvuong">Dribbble</a>
+        <a class="section--social_button bg-clr--github" href="https://github.com/karelvuong">GitHub</a>
+        <a class="section--social_button bg-clr--linkedin" href="https://linkedin.com/in/karelvuong">LinkedIn</a>
+        <a class="section--social_button bg-clr--quora" href="https://quora.com/karelvuong">Quora</a>
+        <a class="section--social_button bg-clr--twitter" href="https://twitter.com/karelvuong">Twitter</a>
       </div>
     </div>
   </div>
