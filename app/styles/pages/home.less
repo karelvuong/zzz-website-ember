@@ -1,6 +1,12 @@
 .section {}
 
-.section--sm {}
+.section--xs {
+  padding: 10px 0;
+}
+
+.section--sm {
+  padding: 20px 0;
+}
 
 .section--md {
   padding: 60px 0;
@@ -14,17 +20,49 @@
   background-color: #fff;
 }
   .section--intro_email-input {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
     padding: 8px 12px;
   }
+  .section--intro_email-btn {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #212121;
+    margin-left: -5px;
 
-.section--posts {
+    &:hover {
+      border-color: #bbb;
+    }
+  }
+
+.section--posts {}
+  .section--posts_post {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  .section--posts_left-column {
+    border-right: 1px solid #ddd;
+  }
+
+.section--work {
   background-color: #FBFCFD;
   border-top: 1px solid #E0E8EF;
   border-bottom: 1px solid #E0E8EF;
 }
 
-.section--social {
-  background-color: #212121;
+.section--ember {
+  background-color: #393A3F;
+
+  p {
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 0;
+  }
+
+  a {
+    color: #fff;
+  }
 }
 
 .section--social_button {
