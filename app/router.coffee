@@ -7,5 +7,9 @@ Router = Ember.Router.extend
 Router.map ->
   @resource 'home', { path: '/' }
   @resource 'resume'
+  @route 'stuff-i-use'
+  @route 'posts'
+  @route 'work'
+  @route 'about'
 
 `export default Router`
