@@ -12,7 +12,7 @@
 @gray-dark:              lighten(@gray-base, 20%);   // #333
 @gray:                   lighten(@gray-base, 33.5%); // #555
 @gray-light:             lighten(@gray-base, 46.7%); // #777
-@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+@gray-lighter:           lighten(@gray-base, 53.5%); // #eee
 
 @brand-primary:         darken(#428bca, 6.5%); // #337ab7
 @brand-success:         #5cb85c;
@@ -21,6 +21,7 @@
 @brand-danger:          #d9534f;
 
 @clr-dribbble:          #EA4C89;
+@clr-ember:             #E3543B;
 @clr-github:            #BD2C00;
 @clr-linkedin:          #0976B4;
 @clr-quora:             #A82400;
@@ -33,7 +34,9 @@
 //** Background color for `<body>`.
 @body-bg:               #fff;
 //** Global text color on `<body>`.
-@text-color:            @gray-dark;
+@text-color:            #232A2E;
+
+@mark-bg:               #FFF3B3;
 
 //** Global textual link color.
 @link-color:            #168EEA;
@@ -151,7 +154,7 @@
 //** Number of columns in the grid.
 @grid-columns:              12;
 //** Padding between columns. Gets divided in half for the left and right.
-@grid-gutter-width:         30px;
+@grid-gutter-width:         0; //30px
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
 @grid-float-breakpoint:     @screen-sm-min;
@@ -207,7 +210,7 @@
 //** Horizontal offset for forms and lists.
 @component-offset-horizontal: 180px;
 //** Text muted color
-@text-muted:                  @gray-light;
+@text-muted:                  @gray-lighter;
 //** Abbreviations and acronyms border color
 @abbr-border-color:           @gray-light;
 //** Headings small color
