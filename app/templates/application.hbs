@@ -1,12 +1,13 @@
 <header class="header--site">
   <div class="container">
-    {{#link-to 'home'}}<span class="header--site_logo pull-left"></span>{{/link-to}}
+    {{#link-to 'home' class='header--site_name pull-left'}}Karel Vuong{{/link-to}}
+    <a class="header--site_twitter pull-left" href="https://twitter.com/karelvuong">(@karelvuong)</a>
 
-    <ul class="pull-right">
-      {{#link-to 'about' class='header--site_link'}}About{{/link-to}}
-      {{#link-to 'posts' class='header--site_link'}}Posts{{/link-to}}
-      {{#link-to 'work' class='header--site_link'}}Work{{/link-to}}
-      {{#link-to 'resume' class='header--site_link'}}Resume{{/link-to}}
+    <ul class="header--site_list pull-right">
+      <li class="header--site_list_item">{{#link-to 'about' class='header--site_link'}}About{{/link-to}}</li>
+      <li class="header--site_list_item">{{#link-to 'posts' class='header--site_link'}}Posts{{/link-to}}</li>
+      <li class="header--site_list_item">{{#link-to 'work' class='header--site_link'}}Work{{/link-to}}</li>
+      <li class="header--site_list_item">{{#link-to 'resume' class='header--site_link'}}Resume{{/link-to}}</li>
     </ul>
   </div>
 </header>
@@ -19,14 +20,18 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
+        <div class="footer--site_image pull-left"></div>
         <p>{{#link-to 'home' class="footer--site_name"}}Karel Vuong{{/link-to}}</p>
-        <p class="footer--site_text"></p>
+        <p class="footer--site_text">
+          Currently a Product Manager at Zazzle, I am a software engineer at heart and enjoy designing things on the side.
+        </p>
       </div>
-      <div class="col-md-3">
-        <p>About</p>
-        <p>Posts</p>
-        <p>Work</p>
-      </div>
+      <ul class="footer--site_list col-md-3">
+        <li class="footer--site_list_item">{{#link-to 'about' class='footer--site_link'}}About{{/link-to}}</li>
+        <li class="footer--site_list_item">{{#link-to 'posts' class='footer--site_link'}}Posts{{/link-to}}</li>
+        <li class="footer--site_list_item">{{#link-to 'work' class='footer--site_link'}}Work{{/link-to}}</li>
+        <li class="footer--site_list_item">{{#link-to 'resume' class='footer--site_link'}}Resume{{/link-to}}</li>
+      </ul>
       <div class="col-md-3">
         <a class="section--social_button bg-clr--dribbble" href="https://dribbble.com/karelvuong">Dribbble</a>
         <a class="section--social_button bg-clr--github" href="https://github.com/karelvuong">GitHub</a>
