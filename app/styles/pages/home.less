@@ -59,6 +59,7 @@
     background-color: #8B959E;
     display: block;
     height: 240px;
+    margin-bottom: 10px;
     opacity: 0.1;
     width: 100%;
   }
@@ -66,7 +67,14 @@
     color: @text-color;
     display: block;
     font-size: 24px;
-    margin: 10px 0;
+    margin-bottom: 0;
+
+    & + .post_text {
+      margin-top: 10px;
+    }
+  }
+  .post_title--sm {
+    font-size: 18px;
   }
   .post_text {
     color: #8B959E;
