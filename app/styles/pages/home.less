@@ -38,13 +38,39 @@
     }
   }
 
-.section--posts {}
+.section--posts {
+  border-top: 1px solid #ddd;
+}
   .section--posts_post {
-    padding: 20px;
     border-bottom: 1px solid #ddd;
+    display: block;
+    padding: 20px;
+
+    &:hover {
+      background-color: #F8F8F8;
+    }
   }
   .section--posts_left-column {
     border-right: 1px solid #ddd;
+  }
+
+  // Posts
+  .post_image {
+    background-color: #8B959E;
+    display: block;
+    height: 240px;
+    opacity: 0.1;
+    width: 100%;
+  }
+  .post_title {
+    color: @text-color;
+    display: block;
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  .post_text {
+    color: #8B959E;
+    line-height: 1.6;
   }
 
 .section--work {
