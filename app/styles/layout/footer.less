@@ -1,8 +1,7 @@
 .footer--site {
-  border-top: 1px solid #eee;
   padding: 40px 0;
 }
-  .footer--site_image {
+  .footer--site-image {
     background: url('/assets/images/face.jpg') no-repeat center center;
     background-size: 100%;
     display: inline-block;
@@ -10,20 +9,27 @@
     margin-right: 20px;
     width: 100px;
   }
-  .footer--site_name {
+  .footer--site-name {
     color: #232A2E;
+    display: block;
     font-size: 18px;
     font-weight: 700;
+    margin-bottom: 5px;
   }
-  .footer--site_text {
+  .footer--site-text {
     font-size: 12px;
-  }
-  .footer--site_list {
+    margin-bottom: 0;
 
+    & + & {
+      margin-top: 5px;
+    }
   }
-  .footer--site_list_item {
+  .footer--site-list {}
+  .footer--site-list-item {
     list-style: none;
   }
-  .footer--site_link {
-
+  .footer--site-link {
+    color: #8B959E;
+    font-size: 12px;
+    line-height: 1.6;
   }
