@@ -1,11 +1,16 @@
 input {
-  border: 1px solid @input-border-color;
+  border: 1px solid;
+  border-color: @input-border-color;
   font-family: @font-family-sans-serif;
   font-size: 12px;
 
   &:focus {
     outline: none;
   }
+}
+
+::-webkit-input-placeholder {
+  color: @text-color;
 }
 
 .input-group {
