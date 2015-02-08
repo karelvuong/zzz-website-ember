@@ -1,8 +1,19 @@
 button {
-  font-size: 12px;
-  padding: 8px 12px;
+  background-color: #fff;
+  border-color: @button-border-color;
+  color: @button-text-color;
+  font-size: 10px;
+  line-height: 1.5;
+  padding: 9px 12px;
+  text-transform: uppercase;
 
   &:hover {
+    border-color: @button-border-hover-color;
+    color: @button-text-hover-color;
+  }
+
+  &:hover,
+  &:focus {
     outline: none;
   }
 }
