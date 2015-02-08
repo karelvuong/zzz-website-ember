@@ -9,7 +9,7 @@ Router.map ->
   @route 'about'
   @route 'stuff-i-use'
   @route 'resume'
-  @resource 'posts'
+  @resource 'blog'
   @resource 'work'
 
 `export default Router`
