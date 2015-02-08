@@ -1,88 +1,55 @@
-<section class="section--intro section--md">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 text-center">
-        <img class="logo--home" src="/assets/images/logo.svg">
-      </div>
+<section class="section--intro section--lg">
+  <div class="section--intro-inner">
+    <h1>Hi, I'm Karel.</h1>
+    <p class="larger">I'm a <mark>Product Manager</mark> at Zazzle.</p>
+    <p>I am a software engineer at heart and enjoy designing things on the side. Occasionally, I'll write things {{#link-to 'blog'}}here{{/link-to}}, but I mainly tweet at <a href="https://twitter.com/karelvuong" target="_blank">@karelvuong</a>. Read more {{#link-to 'about'}}about me{{/link-to}} and the {{#link-to 'stuff-i-use'}}stuff I use{{/link-to}}.</p>
 
-      <div class="col-md-6">
-        <h1>Hi, I'm Karel.</h1>
-        <p class="larger">I'm a <mark>Product Manager</mark> at Zazzle.</p>
-        <p>I am a software engineer at heart and enjoy designing things on the side. Occasionally, I'll write things {{#link-to 'posts'}}here{{/link-to}}, but I mainly tweet at <a href="https://twitter.com/karelvuong" target="_blank">@karelvuong</a>. Read more {{#link-to 'about'}}about me{{/link-to}} and the {{#link-to 'stuff-i-use'}}stuff I use{{/link-to}}.</p>
+    <p class="small text-muted">Sign up for my mailing list if you want to know when I post something.</p>
 
-        <p class="small text-muted">Sign up for my mailing list if you want to know when I post something.</p>
-
-        <div class="input-group">
-          {{input class="section--intro_email-input" type="email" placeholder="Enter your email"}}
-          <button class="section--intro_email-btn">Subscribe</button>
-        </div>
-      </div>
+    <div class="input-group">
+      {{input class="section--intro_email-input" type="email" placeholder="Enter your email"}}
+      <button class="section--intro_email-btn">Subscribe</button>
     </div>
   </div>
 </section>
 
 <section class="section--ember section--xs">
   <div class="container text-center">
-    <p><small>This website was created in <a href="http://emberjs.com/"><strong class="clr--ember">Ember.js</strong></a> using <a href="http://ember-cli.com"><strong class="clr--ember">ember-cli</strong></a> as an experiment and is available as a public repository on <a href="https://github.com/karelvuong/website-ember"><strong>GitHub</strong></a>.</small></p>
+    <p><small>This website was created in <a href="http://emberjs.com/"><strong class="ul--ember">Ember.js</strong></a> using <a href="http://ember-cli.com"><strong class="ul--ember">ember-cli</strong></a> as an experiment and is available as a public repository on <a href="https://github.com/karelvuong/website-ember"><strong>GitHub</strong></a>.</small></p>
   </div>
 </section>
 
 <section class="section--posts section--md">
-  <div class="section--posts container">
-    <div class="section--posts_column section--posts_column--left">
-      <a class="section--posts_post" href="#">
-        <p class="post_title">Designing Zazzle Maker Dashboard</p>
-        <p class="post_text">A look into the design process behind Zazzle - Maker Dashboard.</p>
-      </a>
+  <div class="container">
+    <div class="posts--home">
+      <div class="post--home">
+        <div class="post--home-heading">
+          <a class="post-title t-uppercase" href="#">Designing Zazzle Maker Dashboard</a>
+          <p class="post-meta"><i class="oi" data-glyph="clock"></i> February 6, 2015</p>
+        </div>
 
-      <a class="section--posts_post" href="#">
-        <p class="post_title">Joining Zazzle</p>
-        <p class="post_text">
-          A few words here... not too many.
-        </p>
-      </a>
+        <div class="post--home-body">
+          <p class="post_text">A look into the design process behind Zazzle Maker Dashboard.</p>
+        </div>
+      </div>
 
-      <a class="section--posts_post" href="#">
-        <p class="post_text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </a>
-    </div>
+      <div class="post--home">
+        <a class="post-title t-uppercase" href="#">Joining Zazzle</a>
+      </div>
 
-
-
-
-
-    <div class="section--posts_column">
-      <a class="section--posts_post" href="#">
-        <p class="post_title">Designing BlackBerry Flow</p>
+      <div class="post--home">
+        <a class="post-title t-uppercase" href="#">Designing BlackBerry Flow</a>
         <p class="post_text">A look into the design process behind Flow.</p>
-      </a>
+      </div>
 
-      <a class="section--posts_post" href="#">
-        <p class="post_text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </a>
+      <div class="post--home">
+        <a class="post-title post-title--sm t-uppercase" href="#">Welcome to California</a>
+      </div>
 
-      <a class="section--posts_post" href="#">
-        <p class="post_title post_title--sm">Welcome to California</p>
-      </a>
-
-      <a class="section--posts_post" href="#">
-        <p class="post_title">Designing 1 Million Music Moments</p>
+      <div class="post--home">
+        <a class="post-title t-uppercase" href="#">Designing 1 Million Music Moments</a>
         <p class="post_text">A look into the design process.</p>
-      </a>
+      </div>
     </div>
   </div>
 </section>
