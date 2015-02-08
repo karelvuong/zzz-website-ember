@@ -32,7 +32,13 @@
     list-style: none;
   }
   .footer--site-link {
-    color: #8B959E;
+    color: @footer-text-color;
     font-size: 12px;
     line-height: 1.6;
+    opacity: 0.4;
+
+    &:hover {
+      color: @footer-text-color;
+      opacity: 1.0;
+    }
   }
