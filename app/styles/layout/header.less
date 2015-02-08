@@ -1,5 +1,5 @@
 .header--site {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid #eee;
   height: 50px;
   width: 100%;
@@ -18,7 +18,12 @@
   color: @headings-color;
   font-size: 14px;
   font-weight: 700;
-  line-height: 50px;
+  line-height: 20px;
+  margin: 15px 0;
+
+  &:hover {
+    color: @header-name-color;
+  }
 }
 
 .header--site-twitter {
@@ -37,15 +42,18 @@
   }
 }
 .header--site-link {
-  color: #8B959E;
+  color: @header-link-color;
+  display: inline-block;
   font-size: 12px;
-  line-height: 50px;
+  font-weight: 700;
+  line-height: 20px;
+  margin: 15px 0;
 
   &.active {
     color: @text-color;
   }
 
   & + & {
-    margin-left: 20px;
+    margin-left: 30px;
   }
 }
