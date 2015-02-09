@@ -4,9 +4,16 @@
   .footer-image {
     border-radius: 100%;
     display: inline-block;
+    float: left;
     height: 100px;
     margin-right: 20px;
     width: 100px;
+
+    @media (max-width: @screen-md-max) {
+      display: block;
+      float: none;
+      margin-bottom: 20px;
+    }
   }
   .footer-name {
     color: @headings-color;
