@@ -22,13 +22,22 @@ input {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     float: left;
-    position: relative;
-    z-index: 1;
+
+    &:hover,
+    &:focus {
+      position: relative;
+      z-index: 1;
+    }
   }
 
   button {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     margin-left: -2px;
+
+    &:hover {
+      position: relative;
+      z-index: 1;
+    }
   }
 }
