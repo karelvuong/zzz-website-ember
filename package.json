@@ -1,7 +1,7 @@
 {
   "name": "karel",
-  "version": "0.0.0",
-  "description": "Small description for karel goes here",
+  "version": "1.0.0",
+  "description": "Karel Vuong's personal website.",
   "private": true,
   "directories": {
     "doc": "doc",
