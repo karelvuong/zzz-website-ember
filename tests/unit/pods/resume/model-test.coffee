@@ -1,11 +1,11 @@
-`import { test, moduleForModel } from 'ember-qunit'`
+# `import { test, moduleForModel } from 'ember-qunit'`
 
-moduleForModel 'resume', 'Resume', {
-  # Specify the other units that are required for this test.
-  needs: []
-}
+# moduleForModel 'resume', 'Resume', {
+#   # Specify the other units that are required for this test.
+#   needs: []
+# }
 
-test 'it exists', ->
-  model = @subject()
-  # store = @store()
-  ok !!model
+# test 'it exists', ->
+#   model = @subject()
+#   # store = @store()
+#   ok !!model
