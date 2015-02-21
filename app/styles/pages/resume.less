@@ -14,3 +14,58 @@
     margin-top: 40px;
   }
 }
+
+.resume-section-sub-heading {}
+
+.resume-headline {
+  margin-bottom: 60px;
+}
+  .resume-headline-text {
+    color: #ddd;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 0;
+  }
+  .resume-headline-focus {
+    color: @text-color;
+  }
+
+.resume-section-header {
+  color: @headings-color;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.resume-item {
+  & + & {
+    margin-top: 20px;
+  }
+}
+  .resume-item-position,
+  .resume-item-info {
+    color: @headings-color;
+    margin-bottom: 0;
+  }
+
+  .resume-item-position {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .resume-item-info {
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+
+  .resume-item-info,
+  .resume-item-date,
+  .resume-item-details {
+    font-size: 12px;
+  }
+
+  .resume-item-date {
+    & + .resume-item-details {
+      margin-top: 10px;
+    }
+  }
