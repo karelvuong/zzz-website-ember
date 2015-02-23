@@ -3,6 +3,9 @@
   padding-bottom: 40px;
 }
 
+.resume-column-left   { padding-right: 20px; }
+.resume-column-right  { padding-left: 20px; }
+
 .resume-section--masthead {
   border-bottom: 1px solid #D9D9D6;
   margin-bottom: 40px;
@@ -11,7 +14,9 @@
 
 .resume-section {
   & + & {
+    border-top: 1px solid #eee;
     margin-top: 40px;
+    padding-top: 40px;
   }
 }
 
@@ -31,41 +36,61 @@
   }
 
 .resume-section-header {
-  color: @headings-color;
+  color: @text-color;
+  font-size: 12px;
   font-weight: 700;
+  letter-spacing: 1px;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
 .resume-item {
   & + & {
-    margin-top: 20px;
+    margin-top: 40px;
   }
 }
-  .resume-item-position,
-  .resume-item-info {
-    color: @headings-color;
-    margin-bottom: 0;
-  }
-
-  .resume-item-position {
-    font-size: 16px;
-    font-weight: 700;
-  }
-
-  .resume-item-info {
-    line-height: 1;
-    margin-bottom: 5px;
-  }
-
-  .resume-item-info,
-  .resume-item-date,
-  .resume-item-details {
-    font-size: 12px;
-  }
-
-  .resume-item-date {
-    & + .resume-item-details {
-      margin-top: 10px;
+  .resume-item-header {
+    & + .resume-item-body {
+      margin-top: 5px;
     }
   }
+    .resume-item-header-info {}
+    .resume-item-header-right {
+      padding-right: 40px;
+    }
+
+    .resume-item-header-img {
+      height: auto;
+      width: 40px;
+    }
+
+    .resume-item-position,
+    .resume-item-company {
+      color: @headings-color;
+      margin-bottom: 0;
+    }
+
+    .resume-item-position {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.6;
+      margin-top: 0;
+    }
+
+    .resume-item-company {
+      line-height: 1;
+      margin-bottom: 5px;
+    }
+
+    .resume-item-company,
+    .resume-item-date,
+    .resume-item-details {
+      font-size: 12px;
+    }
+
+    .resume-item-date {
+      margin-bottom: 0;
+    }
+
+  .resume-item-body {}
+    .resume-item-details {}
