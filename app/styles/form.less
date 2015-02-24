@@ -24,9 +24,14 @@ input {
     float: left;
 
     &:hover,
-    &:focus {
+    &:focus,
+    &.mce_inline_error {
       position: relative;
       z-index: 1;
+    }
+
+    &.mce_inline_error {
+      border-color: @input-text-error-color !important;
     }
   }
 
@@ -40,4 +45,13 @@ input {
       z-index: 1;
     }
   }
+}
+
+div.mce_inline_error {
+  background-color: transparent !important;
+  color: @input-border-error-color !important;
+  font-size: 12px;
+  padding: 0 !important;
+  font-weight: 400 !important;
+  margin: 10px 0 0 !important;
 }
