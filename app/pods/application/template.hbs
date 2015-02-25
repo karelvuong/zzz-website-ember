@@ -1,7 +1,9 @@
 <header class="header--site">
   <div class="container">
-    {{#link-to 'home' class='header--site-name pull-left'}}Karel Vuong{{/link-to}}
-    <a class="header--site-twitter pull-left" href="https://twitter.com/karelvuong">(@karelvuong)</a>
+    <div class="header--site-brand pull-left">
+      {{#link-to 'home' class='header--site-name'}}Karel Vuong{{/link-to}}
+      <a class="header--site-twitter" href="https://twitter.com/karelvuong">(@karelvuong)</a>
+    </div>
 
     <ul class="header--site-list pull-right">
       {{!-- <li class="header--site-list-item">{{#link-to 'about' class='header--site-link'}}About{{/link-to}}</li> --}}
