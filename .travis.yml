@@ -19,15 +19,7 @@ before_install:
 install:
   - npm install -g bower
   - npm install
-  - npm install spm coveralls
   - bower install
-
-before_script:
-  - node_modules/spm/bin/spm-install
 
 script:
   - npm test
-  - node_modules/spm/bin/spm-test
-
-after_success:
-  - node_modules/spm/bin/spm-test --coveralls | node_modules/.bin/coveralls
