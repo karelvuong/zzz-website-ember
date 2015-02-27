@@ -24,9 +24,35 @@
   </div>
 </section>
 
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+<section class="section--posts section-border-top section--md">
+  <div class="container">
+    <div class="sub-section">
+      <h5>Written by me</h5>
+      <ul class="post-list">
+        <li class="post-list-item">
+          <p class="post-list-item-title">Design Analysis: Zazzle Maker Dashboard</p>
+          <p class="post-list-item-date">Feb. 26, 2015</p>
+        </li>
+      </ul>
+    </div>
 
-<section class="section--work section--md">
+    <div class="sub-section">
+      <h5>Written by others</h5>
+      <ul class="post-list">
+        <li class="post-list-item">
+          <p class="post-list-item-title"></p>
+          <p class="post-list-item-date"></p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="row text-center">
+      {{#link-to 'page-home'}}<button class="btn-section-footer">View posts</button>{{/link-to}}
+    </div>
+  </div>
+</section>
+
+<section class="section--work section-border-top section--md">
   <div class="container">
     <div class="work-row row">
       <div class="work work--side">
@@ -67,7 +93,16 @@
     </div>
 
     <div class="row text-center">
-      {{#link-to 'work'}}<button class="btn-section-footer">View all work</button>{{/link-to}}
+      {{#link-to 'page-work'}}<button class="btn-section-footer">View all work</button>{{/link-to}}
+    </div>
+  </div>
+</section>
+
+<section class="section--resources section-border-top section--md">
+  <div class="container">
+
+    <div class="row text-center">
+      {{#link-to 'page-home'}}<button class="btn-section-footer">View all resources</button>{{/link-to}}
     </div>
   </div>
 </section>
