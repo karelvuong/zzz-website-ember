@@ -1,14 +1,14 @@
 <header class="header--site">
   <div class="container">
     <div class="header--site-brand pull-left">
-      {{#link-to 'home' class='header--site-name'}}Karel Vuong{{/link-to}}
+      {{#link-to 'page-home' class='header--site-name'}}Karel Vuong{{/link-to}}
       <a class="header--site-twitter" href="https://twitter.com/karelvuong">(@karelvuong)</a>
     </div>
 
     <ul class="header--site-list pull-right">
       {{!-- <li class="header--site-list-item">{{#link-to 'about' class='header--site-link'}}About{{/link-to}}</li> --}}
-      {{!-- <li class="header--site-list-item">{{#link-to 'blog' class='header--site-link'}}Blog{{/link-to}}</li> --}}
-      {{!-- <li class="header--site-list-item">{{#link-to 'work' class='header--site-link'}}Work{{/link-to}}</li> --}}
+      <li class="header--site-list-item">{{#link-to 'blog' class='header--site-link'}}Blog{{/link-to}}</li>
+      <li class="header--site-list-item">{{#link-to 'page-work' class='header--site-link'}}Work{{/link-to}}</li>
       <li class="header--site-list-item">{{#link-to 'resume' class='header--site-link'}}Resume{{/link-to}}</li>
     </ul>
   </div>
@@ -21,7 +21,7 @@
     <div class="row">
       <div class="col-md-6">
         <img class="footer-image" src="/assets/images/face.jpg">
-        {{#link-to 'home' class="footer-name"}}Karel Vuong{{/link-to}}
+        {{#link-to 'page-home' class="footer-name"}}Karel Vuong{{/link-to}}
         <p class="footer-text">
           Currently a Product Manager at Zazzle, I am a software engineer at heart and enjoy designing things on the side.
         </p>
@@ -34,7 +34,7 @@
         <h6 class="footer-heading">Navigation</h6>
         <li class="footer-list-item">{{#link-to 'about' class='footer-link'}}About{{/link-to}}</li>
         <li class="footer-list-item">{{#link-to 'blog' class='footer-link'}}Blog{{/link-to}}</li>
-        <li class="footer-list-item">{{#link-to 'work' class='footer-link'}}Work{{/link-to}}</li>
+        <li class="footer-list-item">{{#link-to 'page-work' class='footer-link'}}Work{{/link-to}}</li>
         <li class="footer-list-item">{{#link-to 'resume' class='footer-link'}}Resume{{/link-to}}</li>
       </ul>
 
