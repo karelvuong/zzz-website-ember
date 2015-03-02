@@ -8,9 +8,8 @@ Router.map ->
   @route 'page-home', { path: '/' }
   @route 'about'
   @route 'stuff-i-use'
-  @route 'resume'
-  @resource 'blog'
-  @resource 'work'
-  @route 'page-work', { path: '/work' }
+  @resource 'page-blog', { path: '/blog' }
+  @resource 'page-work', { path: '/work' }
+  @route 'page-resume', { path: '/resume' }
 
 `export default Router`

@@ -1,12 +1,10 @@
 `import { test, moduleFor } from 'ember-qunit'`
 
-moduleFor 'controller:resume', 'ResumeController', {
+moduleFor 'route:page-resume', 'PageResumeRoute', {
   # Specify the other units that are required for this test.
   # needs: ['controller:foo']
 }
 
-# Replace this with your real tests.
 test 'it exists', ->
-  controller = @subject()
-  ok controller
-
+  route = @subject()
+  ok route
