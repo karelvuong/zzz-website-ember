@@ -1,5 +1,5 @@
 .page {
-  padding-top: 50px;
+  padding-top: 70px;
 }
 
 .page--home {
@@ -11,3 +11,38 @@
     text-align: center;
   }
 }
+
+
+//
+//
+//
+.section--masthead {
+  border-bottom: 1px solid #D9D9D6;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+}
+  .masthead-headline {
+    margin-bottom: 40px;
+  }
+    .masthead-headline-text {
+      color: #ddd;
+      font-size: 24px;
+      line-height: 1.2;
+      margin-bottom: 0;
+    }
+    .masthead-headline-focus {
+      color: @text-color;
+    }
+  .masthead-list {
+    padding: 0;
+
+    li {
+      display: inline-block;
+
+      & + li:before {
+        content: '|';
+        margin: 0 5px;
+        opacity: 0.25;
+      }
+    }
+  }

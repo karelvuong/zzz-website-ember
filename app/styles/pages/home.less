@@ -24,7 +24,9 @@
 }
 
 .sub-section {
-
+  & + & {
+    margin-top: 40px;
+  }
 }
 
 
@@ -54,7 +56,15 @@
     padding: 0;
   }
     .post-list-item {
+      & + & {
+        border-top: 1px solid #eed;
+        margin-top: 2px;
+        padding-top: 2px;
+      }
     }
+      .post-list-item-date {
+        margin-bottom: 0;
+      }
 
 // section--work
 .section--work {
