@@ -6,8 +6,8 @@ Router = Ember.Router.extend
 
 Router.map ->
   @route 'page-home', { path: '/' }
-  @route 'about'
-  @route 'stuff-i-use'
+  @route 'page-about', { path: '/about' }
+  @route 'page-equipment', { path: '/equipment'}
   @resource 'page-blog', { path: '/blog' }
   @resource 'page-work', { path: '/work' }
   @route 'page-resume', { path: '/resume' }

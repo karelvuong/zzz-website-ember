@@ -1,6 +1,6 @@
 `import { test, moduleFor } from 'ember-qunit'`
 
-moduleFor 'route:about', 'AboutRoute', {
+moduleFor 'route:page-about', 'PageAboutRoute', {
   # Specify the other units that are required for this test.
   # needs: ['controller:foo']
 }
