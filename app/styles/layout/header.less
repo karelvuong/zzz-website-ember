@@ -1,30 +1,33 @@
 .header--site {
-  background-color: rgba(255, 255, 255, 0.95);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   height: 50px;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 99;
-}
 
-.header--site-logo {
-  background: url(images/logo.svg) no-repeat center center;
-  background-size: 40px 30px;
-  display: inline-block;
-  height: 30px;
-  margin: 10px 0;
-  width: 30px;
-}
-
-.header--site-brand {
-  .transition(all 300ms cubic-bezier(0.68, 0, 0.265,1));
-
-  &:hover {
-    transform: scale(1.05);
+  &.header--site--fixed {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    position: fixed;
   }
 }
+  .header--site-logo {
+    background: url(images/logo.svg) no-repeat center center;
+    background-size: 40px 30px;
+    display: inline-block;
+    height: 30px;
+    margin: 10px 0;
+    width: 30px;
+  }
+
+  .header--site-brand {
+    .transition(all 300ms cubic-bezier(0.68, 0, 0.265,1));
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
   .header--site-name {
     color: @headings-color;
     font-size: 14px;
@@ -36,35 +39,34 @@
       color: @header-name-color;
     }
   }
-
-.header--site-twitter {
-  font-size: 12px;
-  line-height: 50px;
-  margin-left: 5px;
-}
-
-.header--site-list {}
-.header--site-list-item {
-  display: inline-block;
-  list-style: none;
-
-  & + .header--site-list-item {
-    margin-left: 20px;
-  }
-}
-.header--site-link {
-  color: @header-link-color;
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 20px;
-  margin: 15px 0;
-
-  &.active {
-    color: @text-color;
+  .header--site-twitter {
+    font-size: 12px;
+    line-height: 50px;
+    margin-left: 5px;
   }
 
-  & + & {
-    margin-left: 30px;
+  .header--site-list {}
+  .header--site-list-item {
+    display: inline-block;
+    list-style: none;
+
+    & + .header--site-list-item {
+      margin-left: 20px;
+    }
   }
-}
+  .header--site-link {
+    color: @header-link-color;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    margin: 15px 0;
+
+    &.active {
+      color: @text-color;
+    }
+
+    & + & {
+      margin-left: 30px;
+    }
+  }
