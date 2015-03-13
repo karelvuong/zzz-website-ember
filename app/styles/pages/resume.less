@@ -9,15 +9,14 @@
 
 .resume-section {
   & + & {
-    border-top: 1px solid #eee;
-    margin-top: 40px;
-    padding-top: 40px;
+    margin-top: 60px;
   }
 }
 
 .resume-section-header {
+  border-bottom: 1px solid;
   color: @text-color;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 20px;
@@ -74,3 +73,11 @@
 
   .resume-item-body {}
     .resume-item-details {}
+      .resume-item-details-list {
+        & + & {
+          margin-top: 20px;
+        }
+      }
+      .resume-item-details-list-heading {
+        margin-bottom: 4px;
+      }
