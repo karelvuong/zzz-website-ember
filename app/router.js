@@ -12,6 +12,7 @@ Router.map(function() {
   this.resource('page-blog', { path: '/blog' });
   this.resource('page-work', { path: '/work' });
   this.route('page-resume', { path: '/resume' });
+  this.route('page-404', { path: '*path' });
 });
 
 export default Router;
