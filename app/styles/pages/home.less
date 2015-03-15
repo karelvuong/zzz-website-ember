@@ -78,7 +78,20 @@
         padding-top: 2px;
       }
     }
+      .post-list-item-tags {
+        margin-right: 5px;
+
+        & + .post-list-item-date:before {
+          content: "\b7";
+          margin-right: 5px;
+        }
+      }
+        .post-list-item-tag {
+        }
       .post-list-item-date {
+        font-family: @font-family-monospace;
+        font-size: 11px;
+        line-height: 1.7;
         margin-bottom: 0;
       }
 
