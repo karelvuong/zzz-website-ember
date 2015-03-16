@@ -1,5 +1,39 @@
 <div class="page">
-  <div class="container">
-    {{outlet}}
-  </div>
+  <section class="section--posts">
+    <div class="container">
+      <div class="sub-section">
+        <h5>Recent Posts</h5>
+        <ul class="post-list">
+          <li class="post-list-item row">
+            <a class="post-list-item-title pull-left">Website Redesign</a>
+            <div class="pull-right">
+              <p class="post-list-item-date">Mar 02, 2015</p>
+            </div>
+          </li>
+
+          <li class="post-list-item row">
+            {{#link-to 'page-posts.post-design-analysis-zazzle-maker' class='post-list-item-title pull-left'}}Zazzle Maker Dashboard{{/link-to}}
+            <div class="pull-right">
+              <div class="post-list-item-tags pull-left">
+                <strong class="post-list-item-tag">Design Analysis</strong>
+              </div>
+              <span class="post-list-item-date pull-left">Feb 26, 2015</span>
+            </div>
+          </li>
+
+          <li class="post-list-item row">
+            {{#link-to 'page-posts.post-design-analysis-blackberry-flow' class='post-list-item-title pull-left'}}BlackBerry Flow{{/link-to}}
+            <div class="pull-right">
+              <div class="post-list-item-tags pull-left">
+                <strong class="post-list-item-tag">Design Analysis</strong>
+              </div>
+              <span class="post-list-item-date pull-left">Jan 04, 2015</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  {{outlet}}
 </div>
