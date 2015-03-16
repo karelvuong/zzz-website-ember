@@ -9,10 +9,13 @@ Router.map(function() {
   this.route('page-home', { path: '/' });
   this.route('page-about', { path: '/about' });
   this.route('page-equipment', { path: '/equipment'});
-  this.resource('posts', { path: '/posts' });
+  this.resource('posts', { path: '/posts' }, function() {
+    this.route('post-design-maker', { path: 'design-analysis-zazzle-maker' });
+  });
   this.resource('page-work', { path: '/work' });
   this.route('page-resume', { path: '/resume' });
   this.route('page-404', { path: '*path' });
+  this.route('posts.post-website-redesign');
 });
 
 export default Router;
