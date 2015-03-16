@@ -3,7 +3,7 @@ import {
   test
 } from 'ember-qunit';
 
-moduleFor('route:posts.post-website-redesign', {
+moduleFor('route:page-posts.post-website-redesign', {
   // Specify the other units that are required for this test.
   // needs: ['controller:foo']
 });
