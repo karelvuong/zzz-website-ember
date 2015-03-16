@@ -10,12 +10,13 @@ Router.map(function() {
   this.route('page-about', { path: '/about' });
   this.route('page-equipment', { path: '/equipment'});
   this.resource('page-posts', { path: '/posts' }, function() {
-    this.route('post-design-maker', { path: 'design-analysis-zazzle-maker' });
+    this.route('post-website-redesign', { path: 'website-redesign' });
+    this.route('post-design-analysis-zazzle-maker', { path: 'design-analysis-zazzle-maker' });
+    this.route('post-design-analysis-blackberry-flow', { path: 'design-analysis-blackberry-flow' });
   });
   this.resource('page-work', { path: '/work' });
   this.route('page-resume', { path: '/resume' });
   this.route('page-404', { path: '*path' });
-  this.route('posts.post-website-redesign');
 });
 
 export default Router;
