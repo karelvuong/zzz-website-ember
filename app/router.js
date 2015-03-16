@@ -9,7 +9,7 @@ Router.map(function() {
   this.route('page-home', { path: '/' });
   this.route('page-about', { path: '/about' });
   this.route('page-equipment', { path: '/equipment'});
-  this.resource('page-posts', { path: '/posts' });
+  this.resource('posts', { path: '/posts' });
   this.resource('page-work', { path: '/work' });
   this.route('page-resume', { path: '/resume' });
   this.route('page-404', { path: '*path' });
