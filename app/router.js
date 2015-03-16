@@ -9,7 +9,7 @@ Router.map(function() {
   this.route('page-home', { path: '/' });
   this.route('page-about', { path: '/about' });
   this.route('page-equipment', { path: '/equipment'});
-  this.resource('posts', { path: '/posts' }, function() {
+  this.resource('page-posts', { path: '/posts' }, function() {
     this.route('post-design-maker', { path: 'design-analysis-zazzle-maker' });
   });
   this.resource('page-work', { path: '/work' });
