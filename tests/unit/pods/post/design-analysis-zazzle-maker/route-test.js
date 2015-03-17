@@ -3,7 +3,7 @@ import {
   test
 } from 'ember-qunit';
 
-moduleFor('route:page-posts.post-design-analysis-zazzle-maker', {
+moduleFor('route:post.design-analysis-zazzle-maker', {
   // Specify the other units that are required for this test.
   // needs: ['controller:foo']
 });

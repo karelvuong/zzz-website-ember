@@ -3,7 +3,7 @@ import {
   test
 } from 'ember-qunit';
 
-moduleFor('route:page-posts.post-design-analysis-blackberry-flow', {
+moduleFor('route:post.design-analysis-blackberry-flow', {
   // Specify the other units that are required for this test.
   // needs: ['controller:foo']
 });
