@@ -43,7 +43,7 @@ Post.reopenClass({
     },
     {
       id: 4,
-      title: 'Eli Lilly - CLinical Trial Visualization Redesign',
+      title: 'Winners Selected in Clinical Trial Visualization Redesign Challenge',
       url: 'http://portal.lillycoi.com/2013/11/14/winners-selected-in-clinical-trial-visualization-redesign-challenge/',
       type: 2,
       // date: 1420358400000

@@ -2,10 +2,9 @@
   <section class="section--posts">
     <div class="container">
       <div class="sub-section">
-        <h5>Recent Posts</h5>
-
+        <h5>Written by Me</h5>
         <ul class="post-list">
-          {{#each post in model}}
+          {{#each post in model.posts}}
           <li class="post-list-item row">
             {{#link-to post.url class='post-list-item-title pull-left'}}{{post.title}}{{/link-to}}
 
@@ -19,6 +18,29 @@
               {{/if}}
 
               <p class="post-list-item-date pull-left">{{post.date}}</p>
+            </div>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <div class="sub-section">
+        <h5>Written by Others</h5>
+        <ul class="post-list">
+          {{#each article in model.articles}}
+          <li class="post-list-item row">
+            <a class="post-list-item-title pull-left" href="{{article.url}}">{{article.title}}</a>
+
+            <div class="pull-right">
+              {{#if article.tags}}
+              <div class="post-list-item-tags pull-left">
+                {{#each tag in article.tags}}
+                <strong class="post-list-item-tag">{{tag}}</strong>
+                {{/each}}
+              </div>
+              {{/if}}
+
+              <p class="post-list-item-date pull-left">{{article.date}}</p>
             </div>
           </li>
           {{/each}}
