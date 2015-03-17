@@ -3,33 +3,24 @@
     <div class="container">
       <div class="sub-section">
         <h5>Recent Posts</h5>
+
+
         <ul class="post-list">
+          {{#each post in model}}
           <li class="post-list-item row">
-            <a class="post-list-item-title pull-left">Website Redesign</a>
+            {{#link-to post.url class='post-list-item-title pull-left'}}{{post.title}}{{/link-to}}
             <div class="pull-right">
-              <p class="post-list-item-date">Mar 02, 2015</p>
-            </div>
-          </li>
-
-          <li class="post-list-item row">
-            {{#link-to 'post.design-analysis-zazzle-maker' class='post-list-item-title pull-left'}}Zazzle Maker Dashboard{{/link-to}}
-            <div class="pull-right">
+              {{#if post.tags}}
               <div class="post-list-item-tags pull-left">
-                <strong class="post-list-item-tag">Design Analysis</strong>
+                {{#each tag in post.tags}}
+                <strong class="post-list-item-tag">{{tag}}</strong>
+                {{/each}}
               </div>
-              <span class="post-list-item-date pull-left">Feb 26, 2015</span>
+              {{/if}}
+              <p class="post-list-item-date pull-left">{{post.date}}</p>
             </div>
           </li>
-
-          <li class="post-list-item row">
-            {{#link-to 'post.design-analysis-blackberry-flow' class='post-list-item-title pull-left'}}BlackBerry Flow{{/link-to}}
-            <div class="pull-right">
-              <div class="post-list-item-tags pull-left">
-                <strong class="post-list-item-tag">Design Analysis</strong>
-              </div>
-              <span class="post-list-item-date pull-left">Jan 04, 2015</span>
-            </div>
-          </li>
+          {{/each}}
         </ul>
       </div>
     </div>
