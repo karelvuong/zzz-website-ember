@@ -4,7 +4,8 @@ var Post = DS.Model.extend({
   title: DS.attr('string'),
   url: DS.attr('string'),
   date: DS.attr('date'),
-  tags: DS.attr('array')
+  tags: DS.attr('array'),
+  type: DS.attr('number')   // 1 = personal, 2 = other
 });
 
 Post.reopenClass({
@@ -39,6 +40,15 @@ Post.reopenClass({
       tags: [
         "Design Analysis"
       ]
+    },
+    {
+      id: 4,
+      title: 'Eli Lilly - CLinical Trial Visualization Redesign',
+      url: 'http://portal.lillycoi.com/2013/11/14/winners-selected-in-clinical-trial-visualization-redesign-challenge/',
+      type: 2,
+      // date: 1420358400000
+      date: 'Nov 11, 2013',
+      tags: []
     }
   ]
 });
