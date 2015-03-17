@@ -13,6 +13,7 @@ Post.reopenClass({
       id: 1,
       title: 'Website Redesign',
       url: 'post.website-redesign',
+      type: 1,
       // date: 1425283200000
       date: 'Mar 17, 2015',
       tags: []
@@ -21,6 +22,7 @@ Post.reopenClass({
       id: 2,
       title: 'Zazzle Maker Dashboard',
       url: 'post.design-analysis-zazzle-maker',
+      type: 1,
       // date: 1424937600000
       date: 'Mar 02, 2015',
       tags: [
@@ -31,6 +33,7 @@ Post.reopenClass({
       id: 3,
       title: 'BlackBerry Flow',
       url: 'post.design-analysis-blackberry-flow',
+      type: 1,
       // date: 1420358400000
       date: 'Jan 05, 2015',
       tags: [

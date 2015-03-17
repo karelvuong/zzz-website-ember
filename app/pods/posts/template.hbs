@@ -4,11 +4,11 @@
       <div class="sub-section">
         <h5>Recent Posts</h5>
 
-
         <ul class="post-list">
           {{#each post in model}}
           <li class="post-list-item row">
             {{#link-to post.url class='post-list-item-title pull-left'}}{{post.title}}{{/link-to}}
+
             <div class="pull-right">
               {{#if post.tags}}
               <div class="post-list-item-tags pull-left">
@@ -17,6 +17,7 @@
                 {{/each}}
               </div>
               {{/if}}
+
               <p class="post-list-item-date pull-left">{{post.date}}</p>
             </div>
           </li>
