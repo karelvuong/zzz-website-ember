@@ -11,7 +11,7 @@
         <div id="mc_embed_signup_scroll">
           <div class="mc-field-group input-group">
             {{input id="mce-EMAIL" class="intro-input email" type="email" name="EMAIL" placeholder="Enter your email"}}
-            <button class="intro-btn" type="submit" id="mc-embedded-subscribe" value="Subscribe">Subscribe</button>
+            <button class="intro-btn btn" type="submit" id="mc-embedded-subscribe" value="Subscribe">Subscribe</button>
           </div>
           <div style="position: absolute; left: -5000px;"><input type="text" name="b_453afd4574efb15909950c60d_7cc34305db" tabindex="-1" value=""></div>
         </div>
@@ -46,7 +46,10 @@
     </div>
 
     <div class="row text-center">
-      {{#link-to 'posts'}}<button class="btn-section-footer">View posts</button>{{/link-to}}
+      <div class="btn-section-footer btn-group">
+        {{#link-to 'posts' class="btn"}}View posts{{/link-to}}
+        <a class="btn btn--no-border" href="https://quora.com/Karel-Vuong">Quora</a>
+      </div>
     </div>
   </div>
 </section>
@@ -92,7 +95,10 @@
     </div>
 
     <div class="row text-center">
-      {{#link-to 'works'}}<button class="btn-section-footer">View work</button>{{/link-to}}
+      <div class="btn-section-footer btn-group">
+        {{#link-to 'works' class="btn"}}View work{{/link-to}}
+        <a class="btn btn--no-border" href="https://github.com/karelvuong">GitHub</a>
+      </div>
     </div>
   </div>
 </section>
