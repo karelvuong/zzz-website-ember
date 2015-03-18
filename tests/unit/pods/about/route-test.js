@@ -3,7 +3,7 @@ import {
   test
 } from 'ember-qunit';
 
-moduleFor('route:page-404', {
+moduleFor('route:about', 'AboutRoute', {
   // Specify the other units that are required for this test.
   // needs: ['controller:foo']
 });

@@ -2,8 +2,21 @@
   padding-bottom: 40px;
 }
 
-.resume-column-left   { padding-right: 20px; }
-.resume-column-right  { padding-left: 20px; }
+.resume-column-left   {
+  padding-right: 20px;
+
+  @media (max-width: @screen-md-max) {
+    padding-right: 0;
+    padding-bottom: 60px;
+  }
+}
+.resume-column-right  {
+  padding-left: 20px;
+
+  @media (max-width: @screen-md-max) {
+    padding-left: 0;
+  }
+}
 
 
 
@@ -25,7 +38,7 @@
 
 .resume-item {
   & + & {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
   .resume-item-header {

@@ -1,15 +1,15 @@
 <header class="header--site">
   <div class="container">
     <div class="header--site-brand pull-left">
-      {{#link-to 'page-home' class='header--site-name'}}Karel Vuong{{/link-to}}
+      {{#link-to 'home' class='header--site-name'}}Karel Vuong{{/link-to}}
       <a class="header--site-twitter" href="https://twitter.com/karelvuong">(@karelvuong)</a>
     </div>
 
     <ul class="header--site-list pull-right">
-      <li class="header--site-list-item">{{#link-to 'page-about' class='header--site-link'}}About{{/link-to}}</li>
+      <li class="header--site-list-item">{{#link-to 'about' class='header--site-link'}}About{{/link-to}}</li>
       <li class="header--site-list-item">{{#link-to 'posts' class='header--site-link'}}Posts{{/link-to}}</li>
-      <li class="header--site-list-item">{{#link-to 'page-work' class='header--site-link'}}Work{{/link-to}}</li>
-      <li class="header--site-list-item">{{#link-to 'page-resume' class='header--site-link'}}Resume{{/link-to}}</li>
+      <li class="header--site-list-item">{{#link-to 'works' class='header--site-link'}}Works{{/link-to}}</li>
+      <li class="header--site-list-item">{{#link-to 'resume' class='header--site-link'}}Resume{{/link-to}}</li>
     </ul>
   </div>
 </header>
@@ -19,9 +19,9 @@
 <footer class="footer">
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-sm-6">
         <img class="footer-image" src="/assets/images/face.jpg">
-        {{#link-to 'page-home' class="footer-name"}}Karel Vuong{{/link-to}}
+        {{#link-to 'home' class="footer-name"}}Karel Vuong{{/link-to}}
         <p class="footer-text">
           Currently a Product Manager at Zazzle, I am a software engineer at heart and enjoy designing things on the side.
         </p>
@@ -30,21 +30,23 @@
         </p>
       </div>
 
-      <ul class="footer-list col-md-3">
-        <h6 class="footer-heading">Navigation</h6>
-        <li class="footer-list-item">{{#link-to 'page-about' class='footer-link'}}About{{/link-to}}</li>
-        <li class="footer-list-item">{{#link-to 'posts' class='footer-link'}}Posts{{/link-to}}</li>
-        <li class="footer-list-item">{{#link-to 'page-work' class='footer-link'}}Work{{/link-to}}</li>
-        <li class="footer-list-item">{{#link-to 'page-resume' class='footer-link'}}Resume{{/link-to}}</li>
-      </ul>
+      <div class="col-sm-6">
+        <ul class="footer-list col-xs-6">
+          <h6 class="footer-heading">Navigation</h6>
+          <li class="footer-list-item">{{#link-to 'about' class='footer-link'}}About{{/link-to}}</li>
+          <li class="footer-list-item">{{#link-to 'posts' class='footer-link'}}Posts{{/link-to}}</li>
+          <li class="footer-list-item">{{#link-to 'works' class='footer-link'}}Works{{/link-to}}</li>
+          <li class="footer-list-item">{{#link-to 'resume' class='footer-link'}}Resume{{/link-to}}</li>
+        </ul>
 
-      <ul class="footer-list col-md-3">
-        <h6 class="footer-heading">Networks</h6>
-        <li class="footer-list-item"><a class="footer-link" href="https://github.com/karelvuong">GitHub</a></li>
-        <li class="footer-list-item"><a class="footer-link" href="https://linkedin.com/in/karelvuong">LinkedIn</a></li>
-        <li class="footer-list-item"><a class="footer-link" href="https://quora.com/Karel-Vuong">Quora</a></li>
-        <li class="footer-list-item"><a class="footer-link" href="https://twitter.com/karelvuong">Twitter</a></li>
-      </ul>
+        <ul class="footer-list col-xs-6">
+          <h6 class="footer-heading">Networks</h6>
+          <li class="footer-list-item"><a class="footer-link" href="https://github.com/karelvuong">GitHub</a></li>
+          <li class="footer-list-item"><a class="footer-link" href="https://linkedin.com/in/karelvuong">LinkedIn</a></li>
+          <li class="footer-list-item"><a class="footer-link" href="https://quora.com/Karel-Vuong">Quora</a></li>
+          <li class="footer-list-item"><a class="footer-link" href="https://twitter.com/karelvuong">Twitter</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </footer>

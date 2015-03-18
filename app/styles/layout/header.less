@@ -35,7 +35,8 @@
     line-height: 20px;
     margin: 15px 0;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: @header-name-color;
     }
   }
@@ -62,8 +63,12 @@
     line-height: 20px;
     margin: 15px 0;
 
+    &:focus {
+      color: @header-link-color;
+    }
+
     &.active {
-      color: @text-color;
+      // color: @text-color;
     }
 
     & + & {
