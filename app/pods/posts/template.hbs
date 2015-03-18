@@ -4,6 +4,7 @@
       <div class="sub-section">
         <h5>Written by Me</h5>
         <ul class="post-list">
+          <h6 class="post-list-heading">Posts on {{#link-to 'posts'}}karel.ca{{/link-to}}:</h6>
           {{#each post in model.posts}}
           <li class="post-list-item row">
             {{#link-to post.url class='post-list-item-title pull-left'}}{{post.title}}{{/link-to}}
@@ -22,6 +23,27 @@
           </li>
           {{/each}}
         </ul>
+
+        <ul class="post-list">
+          <h6 class="post-list-heading">Answers on <a href="https://quora.com/Karel+Vuong">Quora</a>:</h6>
+          {{#each article in model.answers}}
+          <li class="post-list-item row">
+            <a class="post-list-item-title pull-left" href="{{article.url}}">{{article.title}}</a>
+
+            <div class="pull-right">
+              {{#if article.tags}}
+              <div class="post-list-item-tags pull-left">
+                {{#each tag in article.tags}}
+                <strong class="post-list-item-tag">{{tag}}</strong>
+                {{/each}}
+              </div>
+              {{/if}}
+
+              <p class="post-list-item-date pull-left">{{article.date}}</p>
+            </div>
+          </li>
+          {{/each}}
+        </ul>
       </div>
 
       <div class="sub-section">
@@ -29,7 +51,7 @@
         <ul class="post-list">
           {{#each article in model.articles}}
           <li class="post-list-item row">
-            <a class="post-list-item-title pull-left" href="{{article.url}}">{{article.title}}</a>
+            <a class="post-list-item-title pull-left" href="{{article.url}}"><strong>{{article.organization}}</strong> - {{article.title}}</a>
 
             <div class="pull-right">
               {{#if article.tags}}

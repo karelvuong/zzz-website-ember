@@ -70,6 +70,10 @@
   .post-list {
     list-style: none;
     padding: 0;
+
+    & + & {
+      margin-top: 20px;
+    }
   }
     .post-list-item {
       & + & {
@@ -220,10 +224,15 @@
         margin-top: 5px;
       }
 
+      &.list--accountability-item--green:before {
+        background-color: #d0e9c6;
+        border-color: #67b168;
+      }
+
       &:before {
         content: '';
         border: 2px solid #ddd;
-        border-radius: 4px;
+        border-radius: 100%;
         display: inline-block;
         float: left;
         height: 20px;
