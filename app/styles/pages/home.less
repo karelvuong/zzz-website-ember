@@ -80,8 +80,22 @@
         border-top: 1px solid #eed;
         margin-top: 2px;
         padding-top: 2px;
+
+        @media (max-width: @screen-sm-max) {
+        margin-top: 8px;
+        padding-top: 8px;
+        }
       }
     }
+      .post-list-item-meta {
+        float: right;
+
+        @media (max-width: @screen-sm-max) {
+          clear: both;
+          display: block;
+          float: none;
+        }
+      }
       .post-list-item-tags {
         margin-right: 5px;
 
@@ -97,6 +111,11 @@
         font-size: 11px;
         line-height: 1.7;
         margin-bottom: 0;
+      }
+      .post-list-text {
+        font-size: 12px;
+        line-height: 0;
+        margin-bottom: 20px;
       }
 
 // section--work
