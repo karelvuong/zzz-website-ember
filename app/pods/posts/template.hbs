@@ -1,77 +1,75 @@
-<div class="page">
-  <section class="section--posts">
-    <div class="container">
-      <div class="sub-section">
-        <h4>Written by Me</h4>
-        <ul class="post-list">
-          <h6 class="post-list-heading">Posts on {{#link-to 'posts'}}karel.ca{{/link-to}}:</h6>
-          {{#each post in model.posts}}
-          <li class="post-list-item row">
-            {{#link-to post.url class='post-list-item-title pull-left'}}{{post.title}}{{/link-to}}
+<div class="page page--posts">
+  <div class="container">
+    <div class="sub-section">
+      <h4>Written by Me</h4>
+      <ul class="post-list">
+        <h6 class="post-list-heading">Posts on {{#link-to 'posts'}}karel.ca{{/link-to}}:</h6>
+        {{#each post in model.posts}}
+        <li class="post-list-item row">
+          {{#link-to post.url class='post-list-item-title pull-left'}}{{post.title}}{{/link-to}}
 
-            <div class="post-list-item-meta">
-              {{#if post.tags}}
-              <div class="post-list-item-tags pull-left">
-                {{#each tag in post.tags}}
-                <strong class="post-list-item-tag">{{tag}}</strong>
-                {{/each}}
-              </div>
-              {{/if}}
-
-              <p class="post-list-item-date pull-left">{{post.date}}</p>
+          <div class="post-list-item-meta">
+            {{#if post.tags}}
+            <div class="post-list-item-tags pull-left">
+              {{#each tag in post.tags}}
+              <strong class="post-list-item-tag">{{tag}}</strong>
+              {{/each}}
             </div>
-          </li>
-          {{/each}}
-        </ul>
+            {{/if}}
 
-        <ul class="post-list">
-          <h6 class="post-list-heading">Answers on <a href="https://quora.com/Karel-Vuong">Quora</a>:</h6>
-          <p class="post-list-text">Some question titles may have been rephrased.</p>
+            <p class="post-list-item-date pull-left">{{post.date}}</p>
+          </div>
+        </li>
+        {{/each}}
+      </ul>
 
-          {{#each article in model.answers}}
-          <li class="post-list-item row">
-            <a class="post-list-item-title pull-left" href="{{article.url}}">{{article.title}}</a>
+      <ul class="post-list">
+        <h6 class="post-list-heading">Answers on <a href="https://quora.com/Karel-Vuong">Quora</a>:</h6>
+        <p class="post-list-text">Some question titles may have been rephrased.</p>
 
-            <div class="post-list-item-meta">
-              {{#if article.tags}}
-              <div class="post-list-item-tags">
-                {{#each tag in article.tags}}
-                <strong class="post-list-item-tag">{{tag}}</strong>
-                {{/each}}
-              </div>
-              {{/if}}
+        {{#each article in model.answers}}
+        <li class="post-list-item row">
+          <a class="post-list-item-title pull-left" href="{{article.url}}">{{article.title}}</a>
 
-              <p class="post-list-item-date">{{article.date}}</p>
+          <div class="post-list-item-meta">
+            {{#if article.tags}}
+            <div class="post-list-item-tags">
+              {{#each tag in article.tags}}
+              <strong class="post-list-item-tag">{{tag}}</strong>
+              {{/each}}
             </div>
-          </li>
-          {{/each}}
-        </ul>
-      </div>
+            {{/if}}
 
-      <div class="sub-section">
-        <h4>Written by Others</h4>
-        <ul class="post-list">
-          {{#each article in model.articles}}
-          <li class="post-list-item row">
-            <a class="post-list-item-title pull-left" href="{{article.url}}"><strong>{{article.organization}}</strong> - {{article.title}}</a>
-
-            <div class="post-list-item-meta">
-              {{#if article.tags}}
-              <div class="post-list-item-tags pull-left">
-                {{#each tag in article.tags}}
-                <strong class="post-list-item-tag">{{tag}}</strong>
-                {{/each}}
-              </div>
-              {{/if}}
-
-              <p class="post-list-item-date pull-left">{{article.date}}</p>
-            </div>
-          </li>
-          {{/each}}
-        </ul>
-      </div>
+            <p class="post-list-item-date">{{article.date}}</p>
+          </div>
+        </li>
+        {{/each}}
+      </ul>
     </div>
-  </section>
+
+    <div class="sub-section">
+      <h4>Written by Others</h4>
+      <ul class="post-list">
+        {{#each article in model.articles}}
+        <li class="post-list-item row">
+          <a class="post-list-item-title pull-left" href="{{article.url}}"><strong>{{article.organization}}</strong> - {{article.title}}</a>
+
+          <div class="post-list-item-meta">
+            {{#if article.tags}}
+            <div class="post-list-item-tags pull-left">
+              {{#each tag in article.tags}}
+              <strong class="post-list-item-tag">{{tag}}</strong>
+              {{/each}}
+            </div>
+            {{/if}}
+
+            <p class="post-list-item-date pull-left">{{article.date}}</p>
+          </div>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
 
   {{outlet}}
 </div>
