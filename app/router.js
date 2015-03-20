@@ -14,6 +14,7 @@ Router.map(function() {
     this.route('website-redesign');
     this.route('design-analysis-zazzle-maker');
     this.route('design-analysis-blackberry-flow');
+    this.route('design-analysis-zazzle-settings');
   });
   this.resource('works');
   this.route('resume');
