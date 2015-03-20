@@ -1,8 +1,14 @@
 .page--post {
   padding-top: 0;
   padding-bottom: 80px;
+
+  .container {
+    @media (max-width: @screen-sm-max) {
+      padding: 0 40px;
+    }
+  }
 }
-  .post-masthead {
+  .post-section--masthead {
     background-color: #212121;
     margin-bottom: 80px;
     padding-top: 100px;
@@ -12,8 +18,7 @@
     .post-masthead-title {
       color: #fff;
       font-size: 50px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
+      font-weight: 400;
     }
     .post-masthead-meta {
       height: 40px;
@@ -53,11 +58,17 @@
   }
     .post-section--image {
       margin: 80px 0;
+
+      img {
+        height: auto;
+        width: 100%;
+      }
     }
     .post-section-header {
       margin-bottom: 40px;
     }
       .post-section-header-title {
+        line-height: 1.2125;
       }
       .post-section-header-subtitle {
         color: @headings-secondary-color;

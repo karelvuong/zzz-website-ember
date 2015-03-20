@@ -1,23 +1,35 @@
-<div class="container">
-  <h4>What is the BlackBerry Flow?</h4>
+<article id="article-{{model.id}}">
+  <section class="post-section--masthead text-center" style="background-color: #212121;">
+    <h1 class="post-masthead-title">BlackBerry Flow</h1>
 
-  <p>I'm still working on this post. Please check back soon!</p>
+    <div class="post-masthead-meta text-center">
+      <p class="post-masthead-meta-item post-masthead-meta-item--date">
+        <i class="oi" data-glyph="clock"></i> {{model.date}}
+      </p>
+      <ul class="post-masthead-meta-item post-masthead-meta-item--tags">
+        <i class="oi" data-glyph="tags"></i>
+        <li class="post-masthead-meta-item--tag">Design Analysis</li>
+      </ul>
+    </div>
+  </section>
 
-  {{!-- Research & Usability Testing
-  Things Learned
+  <section class="post-section post-section--text">
+    <div class="container container--sm">
+      <div class="post-section-header">
+        <h1 class="post-section-header-title">Designing BlackBerry Flow</h1>
+        <p class="post-section-header-subtitle larger">A look into the design process</p>
+      </div>
 
-  Iterations
+      <p class="post-section-text post-section-text--lg">One of my first projects since joining the BlackBerry team as an Applications Developer at the beginning of 2014.</p>
 
-  Iteration #1
-  Concerns
-  Fixes
+      <p class="post-section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </section>
 
-  Iteration #2
-
-  Research & Usability Testing
-  Things Learned
-
-  Finish --}}
-
-  {{outlet}}
-</div>
+    {{outlet}}
+</article>
