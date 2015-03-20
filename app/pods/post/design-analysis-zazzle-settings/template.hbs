@@ -1,1 +1,18 @@
-{{outlet}}
+<article id="article-{{model.id}}" class="article--zazzle">
+  <section class="post-section--masthead text-center">
+    <h1 class="post-masthead-title">Zazzle Settings</h1>
+
+    <div class="post-masthead-meta text-center">
+      <p class="post-masthead-meta-item post-masthead-meta-item--date">
+        <i class="oi" data-glyph="clock"></i> {{model.date}}
+      </p>
+      <ul class="post-masthead-meta-item post-masthead-meta-item--tags">
+        <i class="oi" data-glyph="tags"></i>
+        <li class="post-masthead-meta-item--tag">Design Analysis</li>
+      </ul>
+    </div>
+
+    <div class="post-masthead-overlay"></div>
+  </section>
+    {{outlet}}
+</article>
