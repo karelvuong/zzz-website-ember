@@ -1,6 +1,6 @@
 import Post from '../post/model.js';
 
-var Article = Post.extend({
+var Answer = Post.extend({
 });
 
 Post.reopenClass({
@@ -10,7 +10,6 @@ Post.reopenClass({
       title: 'Cooler',
       organization: "CrackBerry",
       url: 'http://crackberry.com/cooler-blackberry-10',
-      type: 3,
       date: 'Dec 22, 2013',
       tags: []
     },
@@ -19,7 +18,6 @@ Post.reopenClass({
       title: 'Cella',
       organization: "CrackBerry",
       url: 'http://crackberry.com/cella-blackberry-10',
-      type: 3,
       date: 'Dec 6, 2013',
       tags: []
     },
@@ -28,11 +26,10 @@ Post.reopenClass({
       title: 'Winners Selected in Clinical Trial Visualization Redesign Challenge',
       organization: "Eli Lilly",
       url: 'http://portal.lillycoi.com/2013/11/14/winners-selected-in-clinical-trial-visualization-redesign-challenge/',
-      type: 3,
       date: 'Nov 11, 2013',
       tags: []
     }
   ]
 });
 
-export default Article;
+export default Answer;

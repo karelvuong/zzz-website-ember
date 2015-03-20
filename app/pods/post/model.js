@@ -2,6 +2,7 @@ import DS from 'ember-data';
 
 var Post = DS.Model.extend({
   title:          DS.attr('string'),
+  organization:   DS.attr('string'),
   url:            DS.attr('string'),
   date:           DS.attr('date'),
   tags:           DS.attr('array')
