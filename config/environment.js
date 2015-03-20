@@ -6,10 +6,11 @@ module.exports = function(environment) {
     podModulePrefix: 'karel/pods',
     environment: environment,
     contentSecurityPolicy: {
-      'script-src': "'self' 'unsafe-eval' http://*:35729",
       'font-src': "'self' http://fonts.gstatic.com",
-      'connect-src': "'self' *",
+      'img-src': "'self' *",
+      'script-src': "'self' 'unsafe-eval' http://*:35729",
       'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com",
+      'connect-src': "'self' *",
     },
     baseURL: '/',
     locationType: 'auto',
