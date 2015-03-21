@@ -7,7 +7,7 @@ export default Ember.Route.extend({
       answers: this.store.find('post-answer'),
       articles: this.store.find('post-article')
     };
-  },
+  }/*,
   actions: {
    goToAnchor: function(route, anchor) {
       var $elem, $scrollTo;
@@ -20,5 +20,5 @@ export default Ember.Route.extend({
         });
       });
     }
-   }
+   }*/
 });
