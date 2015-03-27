@@ -19,7 +19,7 @@ Post.reopenClass({
     },
     {
       id: 2,
-      title: 'Zazzle Settings',
+      title: 'Zazzle.com Settings',
       url: 'post.design-analysis-zazzle-settings',
       date: 'Mar 20, 2015',
       tags: [
