@@ -1,6 +1,6 @@
 <article id="article-{{model.id}}" class="article--zazzle">
   <section class="post-section--masthead text-center">
-    <h1 class="post-masthead-title">Zazzle.com Settings</h1>
+    <h1 class="post-masthead-title">{{model.title}}</h1>
 
     <div class="post-masthead-meta text-center">
       <p class="post-masthead-meta-item post-masthead-meta-item--date">
@@ -24,9 +24,9 @@
 
       <p class="post-section-text larger">As my second project since <a href="">joining the Zazzle team as a Product Manager Intern</a> in January, I was tasked with redesigning the settings pages on Zazzle.com.</p>
 
-      <p class="post-section-text">With a number of exciting initiatives ongoing within Zazzle, I took on the job of tackling what could be considered to be the least exciting of pages on Zazzle.com. The settings pages are not public facing and are only seen when the user wants to make changes to their profile, account settings, notification preferences, and more. Despite not being seen very often like the home page, product pages, or search results, the settings are an important piece of the puzzle.</p>
+      <p class="post-section-text">With a number of exciting initiatives ongoing within Zazzle, I took on the job of tackling what could be considered to be the least exciting of pages on Zazzle.com. The settings pages are not public facing and are only seen when the user wants to make changes to their profile, account settings, notification preferences, and more. Despite not being seen very often like the home page, product pages, or search results, the settings are an important piece of the site.</p>
 
-      <p class="post-section-text">Like with the <a href="#">Zazzle Maker Dashboard</a>, I took on the duo role of both a product designer and product manager. I created all designs, mockups, and wireframes and managed development over all of the settings pages.
+      <p class="post-section-text">Like with the {{#link-to 'post.design-analysis-zazzle-maker'}}Zazzle Maker Dashboard{{/link-to}}, I took on the duo role of both a product designer and product manager. I created all designs, mockups, and wireframes using tools like <a href="http://bohemiancoding.com/sketch/">Sketch</a> and <a href="http://www.adobe.com/products/photoshop.html">Adobe Photoshop CC</a>. I also oversaw development of all settings pages.
       </p>
     </div>
   </section>
@@ -38,9 +38,9 @@
         <p class="post-section-header-subtitle larger">Make modifying your settings a breeze.</p>
       </div>
 
-      <p class="post-section-text larger">To go hand in hand with </p>
+      <p class="post-section-text larger">To go hand in hand with the profile page redesign, the settings pages also needed a visual refresh.</p>
 
-      <p class="post-section-text">This is some text...</p>
+      <p class="post-section-text">The goal was to make them more usable, more pretty, and </p>
     </div>
   </section>
 
@@ -61,16 +61,20 @@
     <div class="container container--sm">
       <div class="post-section-header">
         <h1 class="post-section-header-title">Guiding Principals</h1>
-        <p class="post-section-header-subtitle larger">The basis of all design decisions.</p>
+        <p class="post-section-header-subtitle larger">It is always prudent to go into something with a plan.</p>
       </div>
 
-      <p class="post-section-text larger">This is some leading text. It appears bigger than the body text because it is meant to stand out!</p>
+      <p class="post-section-text larger">Before I began, I set some guiding principals which were used to steer the decision making behind the design.</p>
+
+      <p class="post-section-text">At a high level, I knew what the goals of the company were at the time. Within the scope of the project, it was important that we moved in parallel with other ongoing projects at the time. What this meant was that the settings pages needed to work together with other projects that affected the site. However other projects moved and weaved, the settings pages would have to move with it.</p>
+
+      <p class="post-section-text"></p>
 
       <h2 class="post-section-title">Complement the New Design</h2>
-      <p class="post-section-text">This is some text...</p>
+      <p class="post-section-text">Designing an experience that is familiar and makes sense to the user is paramount. Consistency is key.</p>
 
       <h2 class="post-section-title">Respect the Past</h2>
-      <p class="post-section-text">This is some text...</p>
+      <p class="post-section-text">An issue that commonly arises when redesigning a widely used platform is the need to help current users . You need to strike a balance between giving the users something completely new and bringing users over into the new design in an elegant fashion. </p>
 
       <h2 class="post-section-title">Restructure into Logical Groupings</h2>
       <p class="post-section-text">This is some text...</p>
@@ -87,23 +91,20 @@
       <p class="post-section-text larger">This is some leading text. It appears bigger than the body text because it is meant to stand out!</p>
 
       <h2 class="post-section-title">Navigation</h2>
-
-      <p class="post-section-text">As a fresh hire, I had the opportunity to review the product from the perspective of someone who had never seen or used the Maker dashboard before. This allowed me to contribute feedback and give insight that existing PMs and members of the Product Design team may have missed after having become familiar with design of the product and its objectives.</p>
+      <p class="post-section-text">...</p>
     </div>
   </section>
 
   <section class="post-section post-section--text">
     <div class="container container--sm">
       <div class="post-section-header">
-        <h1 class="post-section-header-title">Navigation</h1>
-        <p class="post-section-header-subtitle larger">Getting from one place to the next.</p>
+        <h1 class="post-section-header-title">Research and Usability Testing</h1>
+        <p class="post-section-header-subtitle larger">How it can be improved.</p>
       </div>
 
-      <p class="post-section-text larger">This is some leading text. It appears bigger than the body text because it is meant to stand out!</p>
+      <p class="post-section-text larger">Once functional prototypes were finalized, we had to see if we were on the right track.</p>
 
-      <h2 class="post-section-title">Design Guidelines</h2>
-
-      <p class="post-section-text">As a fresh hire, I had the opportunity to review the product from the perspective of someone who had never seen or used the Maker dashboard before. This allowed me to contribute feedback and give insight that existing PMs and members of the Product Design team may have missed after having become familiar with design of the product and its objectives.</p>
+      <p class="post-section-text">It is never wise to accept that your designs are the greatest things ever created. With design comes iteration and it is important to realize that. Throughout the entire design process, tools like <a href="http://basecamp.com/">Basecamp</a>, <a href="https://marvelapp.com/">Marvel</a>, and <a href="http://www.invisionapp.com/">Invision</a> were continously used to present the designs and receive feedback. All Zazzle employees had access to this particular project in Basecamp and were free to view, comment, and provide their feedback on the designs as they were created. </p>
     </div>
   </section>
 
