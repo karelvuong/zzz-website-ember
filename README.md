@@ -1,4 +1,4 @@
-# karel.ca [![Build Status](https://travis-ci.org/karelvuong/website-ember.svg?branch=master)](https://travis-ci.org/karelvuong/website-ember) [![Dependency Status](https://david-dm.org/karelvuong/website-ember.svg)](https://david-dm.org/karelvuong/website-ember.svg)
+# karel.ca [![Build Status](https://travis-ci.org/karelvuong/website-ember.svg?branch=master)](https://travis-ci.org/karelvuong/website-ember) [![Dependency Status](https://david-dm.org/karelvuong/website-ember.svg)](https://david-dm.org/karelvuong/website-ember.svg) [![devDependency Status](https://david-dm.org/karelvuong/website-ember/dev-status.svg?style=flat)](https://david-dm.org/karelvuong/website-ember#info=devDependencies)
 
 You will need the following things properly installed on your computer.
 
