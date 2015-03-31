@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 var PostsRoute = Ember.Route.extend({
+  titleToken: 'Posts',
   model: function() {
     return {
       posts: this.store.all('post'),

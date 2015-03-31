@@ -56,7 +56,7 @@
     }
   }
   .header--site-link {
-    color: @header-link-color;
+    color: fade(@header-link-color, 60);
     display: inline-block;
     font-size: 12px;
     font-weight: 700;
@@ -68,7 +68,7 @@
     }
 
     &.active {
-      // color: @text-color;
+      color: @header-link-color;
     }
 
     & + & {

@@ -1,0 +1,64 @@
+.page--portfolio {
+  padding-top: 0;
+}
+  .header--portfolio {}
+    .header--portfolio-list {}
+    .header--portfolio-list-item {
+      display: inline-block;
+      list-style: none;
+
+      & + .header--portfolio-list-item {
+        margin-left: 20px;
+      }
+    }
+  .portfolio-section--masthead {
+    padding: 100px 20px;
+    position: relative;
+  }
+    .portfolio-masthead-title {
+      color: @headings-color;
+      font-size: 50px;
+      position: relative;
+    }
+    .portfolio-masthead-description {
+      font-size: 20px;
+    }
+  .portfolio-section--work {}
+    .portfolio-work {
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      position: relative;
+    }
+      .portfolio-work-screenshot {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        height: 320px;
+        width: 100%;
+      }
+      .portfolio-work-information {
+        background-color: fade(#000, 80);
+        color: #fff;
+        padding: 20px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+      }
+        .portfolio-work-information-title,
+        .portfolio-work-information-type,
+        .portfolio-work-information-description {
+          margin-bottom: 0;
+        }
+        .portfolio-work-information-title {
+          font-size: 20px;
+          font-weight: 700;
+        }
+        .portfolio-work-information-type,
+        .portfolio-work-information-description {
+          font-size: 12px;
+        }
+        .portfolio-work-information-type {
+          font-weight: 700;
+        }
