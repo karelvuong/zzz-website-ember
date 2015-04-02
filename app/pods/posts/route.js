@@ -1,6 +1,7 @@
 import Ember from 'ember';
+import resetScroll from '../../mixins/reset-scroll.js';
 
-var PostsRoute = Ember.Route.extend({
+var PostsRoute = Ember.Route.extend(resetScroll, {
   titleToken: 'Posts',
   model: function() {
     return {
