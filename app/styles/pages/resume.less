@@ -1,103 +1,100 @@
-.page--resume {
-  padding-bottom: 40px;
-}
+.page--resume {}
+  .resume-column-left   {
+    padding-right: 20px;
 
-.resume-column-left   {
-  padding-right: 20px;
-
-  @media (max-width: @screen-md-max) {
-    padding-right: 0;
-    padding-bottom: 60px;
-  }
-}
-.resume-column-right  {
-  padding-left: 20px;
-
-  @media (max-width: @screen-md-max) {
-    padding-left: 0;
-  }
-}
-
-
-
-.resume-section {
-  & + & {
-    margin-top: 60px;
-  }
-}
-
-.resume-section-header {
-  border-bottom: 1px solid;
-  color: @text-color;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
-.resume-item {
-  & + & {
-    margin-top: 30px;
-  }
-}
-  .resume-item-header {
-    & + .resume-item-body {
-      margin-top: 5px;
+    @media (max-width: @screen-md-max) {
+      padding-right: 0;
+      padding-bottom: 60px;
     }
   }
-    .resume-item-header-info {}
-    .resume-item-header-right {
-      padding-right: 40px;
-    }
+  .resume-column-right  {
+    padding-left: 20px;
 
-    .resume-item-header-img {
-      height: auto;
-      width: 40px;
+    @media (max-width: @screen-md-max) {
+      padding-left: 0;
     }
+  }
 
-    .resume-item-position,
-    .resume-item-company {
-      color: @headings-color;
-      margin-bottom: 0;
+
+
+  .resume-section {
+    & + & {
+      margin-top: 60px;
     }
+  }
 
-    .resume-item-position {
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 1.6;
-      margin-top: 0;
+  .resume-section-header {
+    border-bottom: 1px solid;
+    color: @text-color;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .resume-item {
+    & + & {
+      margin-top: 30px;
     }
-
-    .resume-item-company {
-      line-height: 1;
-      margin-bottom: 5px;
-    }
-
-    .resume-item-company,
-    .resume-item-date,
-    .resume-item-details {
-      font-size: 12px;
-    }
-
-    .resume-item-date {
-      margin-bottom: 0;
-    }
-
-  .resume-item-body {}
-    .resume-item-details {}
-      .resume-item-details-list {
-        & + & {
-          margin-top: 20px;
-        }
+  }
+    .resume-item-header {
+      & + .resume-item-body {
+        margin-top: 5px;
       }
-      .resume-item-details-list-heading {
+    }
+      .resume-item-header-info {}
+      .resume-item-header-right {
+        padding-right: 40px;
+      }
+
+      .resume-item-header-img {
+        height: auto;
+        width: 40px;
+      }
+
+      .resume-item-position,
+      .resume-item-company {
+        color: @headings-color;
         margin-bottom: 0;
+      }
 
-        strong {
-          color: @headings-color;
+      .resume-item-position {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.6;
+        margin-top: 0;
+      }
+
+      .resume-item-company {
+        line-height: 1;
+        margin-bottom: 5px;
+      }
+
+      .resume-item-company,
+      .resume-item-date,
+      .resume-item-details {
+        font-size: 12px;
+      }
+
+      .resume-item-date {
+        margin-bottom: 0;
+      }
+
+    .resume-item-body {}
+      .resume-item-details {}
+        .resume-item-details-list {
+          & + & {
+            margin-top: 20px;
+          }
         }
-      }
-      .resume-item-sub-details {
-        list-style: disc;
-      }
+        .resume-item-details-list-heading {
+          margin-bottom: 0;
+
+          strong {
+            color: @headings-color;
+          }
+        }
+        .resume-item-sub-details {
+          list-style: disc;
+        }
