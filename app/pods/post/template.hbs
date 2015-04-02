@@ -1,12 +1,12 @@
 <div class="page page--post page--has-masthead">
   {{outlet}}
-</div>
 
-<section class="section--ember section--xs">
   <div class="container text-center">
-    <p><small>Want to read more? Go back to my <strong>{{#link-to 'posts'}}Posts{{/link-to}}</strong>.</small></p>
+    <div class="btn-section-footer btn-group">
+      {{#link-to 'posts' class='btn'}}Back to Posts{{/link-to}}
+    </div>
   </div>
-</section>
+</div>
 
 <style type="text/css">
   .header--site a {
