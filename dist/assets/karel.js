@@ -2231,6 +2231,102 @@ define('karel/pods/mailing-list/template', ['exports'], function (exports) {
   }()));
 
 });
+define('karel/pods/portfolio/clients/route', ['exports', 'ember', 'karel/mixins/reset-scroll'], function (exports, Ember, resetScroll) {
+
+  'use strict';
+
+  exports['default'] = Ember['default'].Route.extend(resetScroll['default'], {
+    titleToken: "Extensions"
+  });
+
+});
+define('karel/pods/portfolio/clients/template', ['exports'], function (exports) {
+
+  'use strict';
+
+  exports['default'] = Ember.HTMLBars.template((function() {
+    return {
+      isHTMLBars: true,
+      revision: "Ember@1.11.0-beta.5",
+      blockParams: 0,
+      cachedFragment: null,
+      hasRendered: false,
+      build: function build(dom) {
+        var el0 = dom.createDocumentFragment();
+        var el1 = dom.createElement("section");
+        dom.setAttribute(el1,"class","portfolio-section--masthead text-center");
+        var el2 = dom.createTextNode("\n  ");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createElement("h1");
+        dom.setAttribute(el2,"class","portfolio-masthead-title");
+        var el3 = dom.createTextNode("Client Work");
+        dom.appendChild(el2, el3);
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n  ");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createElement("p");
+        dom.setAttribute(el2,"class","portfolio-masthead-description");
+        var el3 = dom.createTextNode("A collection of projects for various clients like ");
+        dom.appendChild(el2, el3);
+        var el3 = dom.createElement("a");
+        dom.setAttribute(el3,"href","#");
+        var el4 = dom.createTextNode("1 Million Music Moments");
+        dom.appendChild(el3, el4);
+        dom.appendChild(el2, el3);
+        var el3 = dom.createTextNode(" and the ");
+        dom.appendChild(el2, el3);
+        var el3 = dom.createElement("a");
+        dom.setAttribute(el3,"href","");
+        var el4 = dom.createTextNode("Toronto Youth Cabinet");
+        dom.appendChild(el3, el4);
+        dom.appendChild(el2, el3);
+        var el3 = dom.createTextNode(".");
+        dom.appendChild(el2, el3);
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n\n  ");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createElement("div");
+        dom.setAttribute(el2,"class","portfolio-masthead-overlay");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n");
+        dom.appendChild(el1, el2);
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n\n");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        return el0;
+      },
+      render: function render(context, env, contextualElement) {
+        var dom = env.dom;
+        var hooks = env.hooks, content = hooks.content;
+        dom.detectNamespace(contextualElement);
+        var fragment;
+        if (env.useFragmentCache && dom.canClone) {
+          if (this.cachedFragment === null) {
+            fragment = this.build(dom);
+            if (this.hasRendered) {
+              this.cachedFragment = fragment;
+            } else {
+              this.hasRendered = true;
+            }
+          }
+          if (this.cachedFragment) {
+            fragment = dom.cloneNode(this.cachedFragment, true);
+          }
+        } else {
+          fragment = this.build(dom);
+        }
+        var morph0 = dom.createMorphAt(fragment,2,2,contextualElement);
+        content(env, morph0, context, "outlet");
+        return fragment;
+      }
+    };
+  }()));
+
+});
 define('karel/pods/portfolio/extensions/route', ['exports', 'ember', 'karel/mixins/reset-scroll'], function (exports, Ember, resetScroll) {
 
   'use strict';
@@ -2474,7 +2570,7 @@ define('karel/pods/portfolio/index/template', ['exports'], function (exports) {
           dom.appendChild(el2, el3);
           var el3 = dom.createElement("p");
           dom.setAttribute(el3,"class","portfolio-work-information-title text-center");
-          var el4 = dom.createTextNode("Themes");
+          var el4 = dom.createTextNode("Client Work");
           dom.appendChild(el3, el4);
           dom.appendChild(el2, el3);
           var el3 = dom.createTextNode("\n		");
@@ -2511,6 +2607,63 @@ define('karel/pods/portfolio/index/template', ['exports'], function (exports) {
       };
     }());
     var child1 = (function() {
+      return {
+        isHTMLBars: true,
+        revision: "Ember@1.11.0-beta.5",
+        blockParams: 0,
+        cachedFragment: null,
+        hasRendered: false,
+        build: function build(dom) {
+          var el0 = dom.createDocumentFragment();
+          var el1 = dom.createTextNode("  ");
+          dom.appendChild(el0, el1);
+          var el1 = dom.createElement("div");
+          dom.setAttribute(el1,"class","portfolio-work-information");
+          var el2 = dom.createTextNode("\n		");
+          dom.appendChild(el1, el2);
+          var el2 = dom.createElement("div");
+          dom.setAttribute(el2,"class","container");
+          var el3 = dom.createTextNode("\n	    ");
+          dom.appendChild(el2, el3);
+          var el3 = dom.createElement("p");
+          dom.setAttribute(el3,"class","portfolio-work-information-title text-center");
+          var el4 = dom.createTextNode("Themes");
+          dom.appendChild(el3, el4);
+          dom.appendChild(el2, el3);
+          var el3 = dom.createTextNode("\n		");
+          dom.appendChild(el2, el3);
+          dom.appendChild(el1, el2);
+          var el2 = dom.createTextNode("\n  ");
+          dom.appendChild(el1, el2);
+          dom.appendChild(el0, el1);
+          var el1 = dom.createTextNode("\n");
+          dom.appendChild(el0, el1);
+          return el0;
+        },
+        render: function render(context, env, contextualElement) {
+          var dom = env.dom;
+          dom.detectNamespace(contextualElement);
+          var fragment;
+          if (env.useFragmentCache && dom.canClone) {
+            if (this.cachedFragment === null) {
+              fragment = this.build(dom);
+              if (this.hasRendered) {
+                this.cachedFragment = fragment;
+              } else {
+                this.hasRendered = true;
+              }
+            }
+            if (this.cachedFragment) {
+              fragment = dom.cloneNode(this.cachedFragment, true);
+            }
+          } else {
+            fragment = this.build(dom);
+          }
+          return fragment;
+        }
+      };
+    }());
+    var child2 = (function() {
       return {
         isHTMLBars: true,
         revision: "Ember@1.11.0-beta.5",
@@ -2669,6 +2822,10 @@ define('karel/pods/portfolio/index/template', ['exports'], function (exports) {
         dom.appendChild(el1, el2);
         var el2 = dom.createComment("");
         dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createComment("");
+        dom.appendChild(el1, el2);
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n\n");
         dom.appendChild(el0, el1);
@@ -2723,10 +2880,12 @@ define('karel/pods/portfolio/index/template', ['exports'], function (exports) {
         var element0 = dom.childAt(fragment, [2]);
         var morph0 = dom.createMorphAt(element0,3,3);
         var morph1 = dom.createMorphAt(element0,5,5);
-        var morph2 = dom.createMorphAt(fragment,4,4,contextualElement);
-        block(env, morph0, context, "link-to", ["portfolio.themes"], {"class": "portfolio-work portfolio-work--small"}, child0, null);
-        block(env, morph1, context, "link-to", ["portfolio.extensions"], {"class": "portfolio-work portfolio-work--small"}, child1, null);
-        content(env, morph2, context, "outlet");
+        var morph2 = dom.createMorphAt(element0,7,7);
+        var morph3 = dom.createMorphAt(fragment,4,4,contextualElement);
+        block(env, morph0, context, "link-to", ["portfolio.clients"], {"class": "portfolio-work portfolio-work--small"}, child0, null);
+        block(env, morph1, context, "link-to", ["portfolio.themes"], {"class": "portfolio-work portfolio-work--small"}, child1, null);
+        block(env, morph2, context, "link-to", ["portfolio.extensions"], {"class": "portfolio-work portfolio-work--small"}, child2, null);
+        content(env, morph3, context, "outlet");
         return fragment;
       }
     };
@@ -4347,7 +4506,7 @@ define('karel/pods/post/design-analysis-zazzle-settings/template', ['exports'], 
         var el5 = dom.createTextNode("\n        ");
         dom.appendChild(el4, el5);
         var el5 = dom.createElement("p");
-        dom.setAttribute(el5,"class","post-section-header-subtitle larger");
+        dom.setAttribute(el5,"class","post-section-header-blurb larger");
         var el6 = dom.createTextNode("A look into the design process.");
         dom.appendChild(el5, el6);
         dom.appendChild(el4, el5);
@@ -4372,37 +4531,22 @@ define('karel/pods/post/design-analysis-zazzle-settings/template', ['exports'], 
         dom.appendChild(el3, el4);
         var el4 = dom.createElement("p");
         dom.setAttribute(el4,"class","post-section-text");
-        var el5 = dom.createTextNode("With a number of exciting initiatives ongoing within Zazzle, I took on the job of redesigning what some could consider to be the least exciting of pages on Zazzle.com. This is far from the truth. While not forward facing, the settings pages are just as important as Zazzle.com's product pages or search results. Any changes that need to be made to a user's profile and account settings, or a store owner's products, payment information, and tax settings are controlled on these pages. Information that users provide to us to manage their accounts and facilitate their businesses are entered here. ");
+        var el5 = dom.createTextNode("With a number of exciting initiatives ongoing within Zazzle, I took on the job of redesigning what some could consider to be the least exciting of pages on Zazzle.com. This is far from the truth. While not forward facing, the settings pages play a key role on Zazzle.com. Any changes that need to be made to a user's profile and account settings, or a store owner's products, payment information, and tax settings are controlled on these pages. It is here where users provide both public and sensitive information to us");
         dom.appendChild(el4, el5);
         dom.appendChild(el3, el4);
         var el4 = dom.createTextNode("\n\n      ");
         dom.appendChild(el3, el4);
         var el4 = dom.createElement("p");
         dom.setAttribute(el4,"class","post-section-text");
-        var el5 = dom.createTextNode("Like with the ");
-        dom.appendChild(el4, el5);
-        var el5 = dom.createComment("");
-        dom.appendChild(el4, el5);
-        var el5 = dom.createTextNode(", I took on the duo role of both a product designer and product manager. I created all designs, mockups, and wireframes using tools like ");
-        dom.appendChild(el4, el5);
-        var el5 = dom.createElement("a");
-        dom.setAttribute(el5,"href","http://bohemiancoding.com/sketch/");
-        var el6 = dom.createTextNode("Sketch");
+        var el5 = dom.createElement("strong");
+        var el6 = dom.createTextNode("Like with the ");
+        dom.appendChild(el5, el6);
+        var el6 = dom.createComment("");
+        dom.appendChild(el5, el6);
+        var el6 = dom.createTextNode(", I took on the duo role of both a product designer and product manager.");
         dom.appendChild(el5, el6);
         dom.appendChild(el4, el5);
-        var el5 = dom.createTextNode(" and ");
-        dom.appendChild(el4, el5);
-        var el5 = dom.createElement("a");
-        dom.setAttribute(el5,"href","http://www.adobe.com/products/photoshop.html");
-        dom.setAttribute(el5,"target","_blank");
-        var el6 = dom.createTextNode("Adobe Photoshop CC ");
-        dom.appendChild(el5, el6);
-        var el6 = dom.createElement("i");
-        dom.setAttribute(el6,"class","oi");
-        dom.setAttribute(el6,"data-glyph","external-link");
-        dom.appendChild(el5, el6);
-        dom.appendChild(el4, el5);
-        var el5 = dom.createTextNode(". I also oversaw development of all settings pages.");
+        var el5 = dom.createTextNode(" I was responsible for the creation of all designs, mockups, and wireframes, and also managed development for the implementation of the settings pages.");
         dom.appendChild(el4, el5);
         dom.appendChild(el3, el4);
         var el4 = dom.createTextNode("\n    ");
@@ -4433,8 +4577,8 @@ define('karel/pods/post/design-analysis-zazzle-settings/template', ['exports'], 
         var el5 = dom.createTextNode("\n        ");
         dom.appendChild(el4, el5);
         var el5 = dom.createElement("p");
-        dom.setAttribute(el5,"class","post-section-header-subtitle larger");
-        var el6 = dom.createTextNode("Make modifying your settings a breeze.");
+        dom.setAttribute(el5,"class","post-section-header-blurb larger");
+        var el6 = dom.createTextNode("The goal was to make modifying your settings a breeze.");
         dom.appendChild(el5, el6);
         dom.appendChild(el4, el5);
         var el5 = dom.createTextNode("\n      ");
@@ -4444,14 +4588,14 @@ define('karel/pods/post/design-analysis-zazzle-settings/template', ['exports'], 
         dom.appendChild(el3, el4);
         var el4 = dom.createElement("p");
         dom.setAttribute(el4,"class","post-section-text larger");
-        var el5 = dom.createTextNode("To go hand in hand with the profile page redesign, the settings pages also needed a visual refresh.");
+        var el5 = dom.createTextNode("We wanted the pages to be more usable, visually appealing, and complementary to the new design.");
         dom.appendChild(el4, el5);
         dom.appendChild(el3, el4);
         var el4 = dom.createTextNode("\n\n      ");
         dom.appendChild(el3, el4);
         var el4 = dom.createElement("p");
         dom.setAttribute(el4,"class","post-section-text");
-        var el5 = dom.createTextNode("The goal was to make the pages more usable, visually appealing, and complementary to the new design.");
+        var el5 = dom.createTextNode("We wanted the experience of moving from the profile to modifying your profile to be seamless and uninterrupted.");
         dom.appendChild(el4, el5);
         dom.appendChild(el3, el4);
         var el4 = dom.createTextNode("\n    ");
@@ -4482,7 +4626,7 @@ define('karel/pods/post/design-analysis-zazzle-settings/template', ['exports'], 
         var el5 = dom.createTextNode("\n        ");
         dom.appendChild(el4, el5);
         var el5 = dom.createElement("p");
-        dom.setAttribute(el5,"class","post-section-header-subtitle larger");
+        dom.setAttribute(el5,"class","post-section-header-blurb larger");
         var el6 = dom.createTextNode("What it looks like now.");
         dom.appendChild(el5, el6);
         dom.appendChild(el4, el5);
@@ -4491,12 +4635,12 @@ define('karel/pods/post/design-analysis-zazzle-settings/template', ['exports'], 
         dom.appendChild(el3, el4);
         var el4 = dom.createTextNode("\n\n      ");
         dom.appendChild(el3, el4);
-        var el4 = dom.createElement("p");
-        dom.setAttribute(el4,"class","post-section-text larger");
-        var el5 = dom.createTextNode("This is some leading text. It appears bigger than the body text because it is meant to stand out!");
+        var el4 = dom.createElement("h2");
+        dom.setAttribute(el4,"class","post-section-title");
+        var el5 = dom.createTextNode("Accessibility");
         dom.appendChild(el4, el5);
         dom.appendChild(el3, el4);
-        var el4 = dom.createTextNode("\n\n      ");
+        var el4 = dom.createTextNode("\n      ");
         dom.appendChild(el3, el4);
         var el4 = dom.createElement("p");
         dom.setAttribute(el4,"class","post-section-text");
@@ -4514,14 +4658,56 @@ define('karel/pods/post/design-analysis-zazzle-settings/template', ['exports'], 
         dom.appendChild(el3, el4);
         var el4 = dom.createElement("p");
         dom.setAttribute(el4,"class","post-section-text");
-        var el5 = dom.createTextNode("This is some text...");
+        var el5 = dom.createTextNode("In its current state, getting around in the settings is difficult. There is a lack of hierarchy that makes sense. Elements sit on the same level when they are a child of a parent. The navigation boils down to a horizontal navigation bar and a side panel.");
         dom.appendChild(el4, el5);
         dom.appendChild(el3, el4);
-        var el4 = dom.createTextNode("\n\n      ");
+        var el4 = dom.createTextNode("\n    ");
         dom.appendChild(el3, el4);
-        var el4 = dom.createElement("h2");
-        dom.setAttribute(el4,"class","post-section-title");
-        var el5 = dom.createTextNode("Sections");
+        dom.appendChild(el2, el3);
+        var el3 = dom.createTextNode("\n  ");
+        dom.appendChild(el2, el3);
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n\n  ");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createElement("section");
+        dom.setAttribute(el2,"class","post-section post-section--image post-section--image--sm");
+        var el3 = dom.createTextNode("\n    ");
+        dom.appendChild(el2, el3);
+        var el3 = dom.createElement("div");
+        dom.setAttribute(el3,"class","container");
+        var el4 = dom.createTextNode("\n      ");
+        dom.appendChild(el3, el4);
+        var el4 = dom.createElement("figure");
+        dom.setAttribute(el4,"class","post-section-figure");
+        var el5 = dom.createTextNode("\n        ");
+        dom.appendChild(el4, el5);
+        var el5 = dom.createElement("img");
+        dom.setAttribute(el5,"class","post-section-figure-image");
+        dom.setAttribute(el5,"src","/assets/images/posts/design-analysis-zazzle-maker/initial-nav-horz.jpg");
+        dom.setAttribute(el5,"alt","");
+        dom.appendChild(el4, el5);
+        var el5 = dom.createTextNode("\n      ");
+        dom.appendChild(el4, el5);
+        dom.appendChild(el3, el4);
+        var el4 = dom.createTextNode("\n    ");
+        dom.appendChild(el3, el4);
+        dom.appendChild(el2, el3);
+        var el3 = dom.createTextNode("\n  ");
+        dom.appendChild(el2, el3);
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n\n  ");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createElement("section");
+        dom.setAttribute(el2,"class","post-section post-section--text");
+        var el3 = dom.createTextNode("\n    ");
+        dom.appendChild(el2, el3);
+        var el3 = dom.createElement("div");
+        dom.setAttribute(el3,"class","container container--sm");
+        var el4 = dom.createTextNode("\n      ");
+        dom.appendChild(el3, el4);
+        var el4 = dom.createElement("h3");
+        dom.setAttribute(el4,"class","post-section-subtitle");
+        var el5 = dom.createTextNode("Horizontal Navigation Bar");
         dom.appendChild(el4, el5);
         dom.appendChild(el3, el4);
         var el4 = dom.createTextNode("\n      ");
@@ -4535,7 +4721,7 @@ define('karel/pods/post/design-analysis-zazzle-settings/template', ['exports'], 
         dom.appendChild(el3, el4);
         var el4 = dom.createElement("h2");
         dom.setAttribute(el4,"class","post-section-title");
-        var el5 = dom.createTextNode("Accessibility");
+        var el5 = dom.createTextNode("Sections");
         dom.appendChild(el4, el5);
         dom.appendChild(el3, el4);
         var el4 = dom.createTextNode("\n      ");
@@ -4573,8 +4759,8 @@ define('karel/pods/post/design-analysis-zazzle-settings/template', ['exports'], 
         var el5 = dom.createTextNode("\n        ");
         dom.appendChild(el4, el5);
         var el5 = dom.createElement("p");
-        dom.setAttribute(el5,"class","post-section-header-subtitle larger");
-        var el6 = dom.createTextNode("Exploring pain points in the current design.");
+        dom.setAttribute(el5,"class","post-section-header-blurb larger");
+        var el6 = dom.createTextNode("A little research goes a long way.");
         dom.appendChild(el5, el6);
         dom.appendChild(el4, el5);
         var el5 = dom.createTextNode("\n      ");
@@ -4584,14 +4770,36 @@ define('karel/pods/post/design-analysis-zazzle-settings/template', ['exports'], 
         dom.appendChild(el3, el4);
         var el4 = dom.createElement("p");
         dom.setAttribute(el4,"class","post-section-text larger");
-        var el5 = dom.createTextNode("...");
-        dom.appendChild(el4, el5);
         dom.appendChild(el3, el4);
         var el4 = dom.createTextNode("\n\n      ");
         dom.appendChild(el3, el4);
         var el4 = dom.createElement("p");
         dom.setAttribute(el4,"class","post-section-text");
-        var el5 = dom.createTextNode("...");
+        var el5 = dom.createTextNode("We had a bunch of questions like:");
+        dom.appendChild(el4, el5);
+        dom.appendChild(el3, el4);
+        var el4 = dom.createTextNode("\n\n      ");
+        dom.appendChild(el3, el4);
+        var el4 = dom.createElement("ul");
+        var el5 = dom.createTextNode("\n        ");
+        dom.appendChild(el4, el5);
+        var el5 = dom.createElement("li");
+        var el6 = dom.createTextNode("What do users love and what do they dislike about editing their profile or managing their account settings?");
+        dom.appendChild(el5, el6);
+        dom.appendChild(el4, el5);
+        var el5 = dom.createTextNode("\n        ");
+        dom.appendChild(el4, el5);
+        var el5 = dom.createElement("li");
+        var el6 = dom.createTextNode("What are our competitors doing?");
+        dom.appendChild(el5, el6);
+        dom.appendChild(el4, el5);
+        var el5 = dom.createTextNode("\n        ");
+        dom.appendChild(el4, el5);
+        var el5 = dom.createElement("li");
+        var el6 = dom.createTextNode("What are the current design trends these days for editing a profile or managing account settings?");
+        dom.appendChild(el5, el6);
+        dom.appendChild(el4, el5);
+        var el5 = dom.createTextNode("\n      ");
         dom.appendChild(el4, el5);
         dom.appendChild(el3, el4);
         var el4 = dom.createTextNode("\n\n      ");
@@ -4650,7 +4858,7 @@ define('karel/pods/post/design-analysis-zazzle-settings/template', ['exports'], 
         var el5 = dom.createTextNode("\n        ");
         dom.appendChild(el4, el5);
         var el5 = dom.createElement("p");
-        dom.setAttribute(el5,"class","post-section-header-subtitle larger");
+        dom.setAttribute(el5,"class","post-section-header-blurb larger");
         var el6 = dom.createTextNode("It is always prudent to go into something with a plan.");
         dom.appendChild(el5, el6);
         dom.appendChild(el4, el5);
@@ -4673,8 +4881,17 @@ define('karel/pods/post/design-analysis-zazzle-settings/template', ['exports'], 
         dom.appendChild(el3, el4);
         var el4 = dom.createTextNode("\n\n      ");
         dom.appendChild(el3, el4);
+        var el4 = dom.createElement("h2");
+        dom.setAttribute(el4,"class","post-section-title");
+        var el5 = dom.createTextNode("Simplicity");
+        dom.appendChild(el4, el5);
+        dom.appendChild(el3, el4);
+        var el4 = dom.createTextNode("\n      ");
+        dom.appendChild(el3, el4);
         var el4 = dom.createElement("p");
         dom.setAttribute(el4,"class","post-section-text");
+        var el5 = dom.createTextNode("Blah, blah, blah...");
+        dom.appendChild(el4, el5);
         dom.appendChild(el3, el4);
         var el4 = dom.createTextNode("\n\n      ");
         dom.appendChild(el3, el4);
@@ -4702,20 +4919,6 @@ define('karel/pods/post/design-analysis-zazzle-settings/template', ['exports'], 
         var el4 = dom.createElement("p");
         dom.setAttribute(el4,"class","post-section-text");
         var el5 = dom.createTextNode("An issue that commonly arises when redesigning a widely used platform is the need to help current users . You need to strike a balance between giving the users something completely new and bringing users over into the new design in an elegant fashion.");
-        dom.appendChild(el4, el5);
-        dom.appendChild(el3, el4);
-        var el4 = dom.createTextNode("\n\n      ");
-        dom.appendChild(el3, el4);
-        var el4 = dom.createElement("h2");
-        dom.setAttribute(el4,"class","post-section-title");
-        var el5 = dom.createTextNode("Simplifying the Process");
-        dom.appendChild(el4, el5);
-        dom.appendChild(el3, el4);
-        var el4 = dom.createTextNode("\n      ");
-        dom.appendChild(el3, el4);
-        var el4 = dom.createElement("p");
-        dom.setAttribute(el4,"class","post-section-text");
-        var el5 = dom.createTextNode("Blah, blah, blah...");
         dom.appendChild(el4, el5);
         dom.appendChild(el3, el4);
         var el4 = dom.createTextNode("\n\n      ");
@@ -4760,7 +4963,7 @@ define('karel/pods/post/design-analysis-zazzle-settings/template', ['exports'], 
         var el5 = dom.createTextNode("\n        ");
         dom.appendChild(el4, el5);
         var el5 = dom.createElement("p");
-        dom.setAttribute(el5,"class","post-section-header-subtitle larger");
+        dom.setAttribute(el5,"class","post-section-header-blurb larger");
         var el6 = dom.createTextNode("How it can be improved.");
         dom.appendChild(el5, el6);
         dom.appendChild(el4, el5);
@@ -4845,13 +5048,13 @@ define('karel/pods/post/design-analysis-zazzle-settings/template', ['exports'], 
         dom.appendChild(el4, el5);
         var el5 = dom.createElement("h1");
         dom.setAttribute(el5,"class","post-section-header-title");
-        var el6 = dom.createTextNode("Research and Usability Testing");
+        var el6 = dom.createTextNode("Feedback");
         dom.appendChild(el5, el6);
         dom.appendChild(el4, el5);
         var el5 = dom.createTextNode("\n        ");
         dom.appendChild(el4, el5);
         var el5 = dom.createElement("p");
-        dom.setAttribute(el5,"class","post-section-header-subtitle larger");
+        dom.setAttribute(el5,"class","post-section-header-blurb larger");
         var el6 = dom.createTextNode("How it can be improved.");
         dom.appendChild(el5, el6);
         dom.appendChild(el4, el5);
@@ -4869,21 +5072,7 @@ define('karel/pods/post/design-analysis-zazzle-settings/template', ['exports'], 
         dom.appendChild(el3, el4);
         var el4 = dom.createElement("p");
         dom.setAttribute(el4,"class","post-section-text");
-        var el5 = dom.createTextNode("It is never wise to accept that your designs are perfect. With design comes iteration and it is important to realize that. Throughout the entire design process, tools like ");
-        dom.appendChild(el4, el5);
-        var el5 = dom.createElement("a");
-        dom.setAttribute(el5,"href","http://basecamp.com/");
-        var el6 = dom.createTextNode("Basecamp");
-        dom.appendChild(el5, el6);
-        dom.appendChild(el4, el5);
-        var el5 = dom.createTextNode(", ");
-        dom.appendChild(el4, el5);
-        var el5 = dom.createElement("a");
-        dom.setAttribute(el5,"href","https://marvelapp.com/");
-        var el6 = dom.createTextNode("Marvel");
-        dom.appendChild(el5, el6);
-        dom.appendChild(el4, el5);
-        var el5 = dom.createTextNode(", and ");
+        var el5 = dom.createTextNode("It is never wise to accept that your designs are perfect. With design comes iteration and it is important to realize that. Throughout the entire design process, tools like , , and ");
         dom.appendChild(el4, el5);
         var el5 = dom.createElement("a");
         dom.setAttribute(el5,"href","http://www.invisionapp.com/");
@@ -4921,8 +5110,158 @@ define('karel/pods/post/design-analysis-zazzle-settings/template', ['exports'], 
         var el5 = dom.createTextNode("\n        ");
         dom.appendChild(el4, el5);
         var el5 = dom.createElement("p");
-        dom.setAttribute(el5,"class","post-section-header-subtitle larger");
+        dom.setAttribute(el5,"class","post-section-header-blurb larger");
         var el6 = dom.createTextNode("For design, development, and project management.");
+        dom.appendChild(el5, el6);
+        dom.appendChild(el4, el5);
+        var el5 = dom.createTextNode("\n      ");
+        dom.appendChild(el4, el5);
+        dom.appendChild(el3, el4);
+        var el4 = dom.createTextNode("\n\n      ");
+        dom.appendChild(el3, el4);
+        var el4 = dom.createElement("p");
+        dom.setAttribute(el4,"class","post-section-text");
+        var el5 = dom.createTextNode("There are countless tools out there that are used by different companies and different people. Personally, I am always curious as to what others are using when they go about working on a project. So, here is a list of things I used while working on Zazzle.com Settings!");
+        dom.appendChild(el4, el5);
+        dom.appendChild(el3, el4);
+        var el4 = dom.createTextNode("\n\n      ");
+        dom.appendChild(el3, el4);
+        var el4 = dom.createElement("h2");
+        dom.setAttribute(el4,"class","post-section-title");
+        var el5 = dom.createTextNode("Design");
+        dom.appendChild(el4, el5);
+        dom.appendChild(el3, el4);
+        var el4 = dom.createTextNode("\n      ");
+        dom.appendChild(el3, el4);
+        var el4 = dom.createElement("ul");
+        var el5 = dom.createTextNode("\n        ");
+        dom.appendChild(el4, el5);
+        var el5 = dom.createElement("li");
+        var el6 = dom.createElement("a");
+        dom.setAttribute(el6,"href","http://bohemiancoding.com/sketch/");
+        dom.setAttribute(el6,"target","_blank");
+        var el7 = dom.createTextNode("Sketch");
+        dom.appendChild(el6, el7);
+        dom.appendChild(el5, el6);
+        dom.appendChild(el4, el5);
+        var el5 = dom.createTextNode("\n        ");
+        dom.appendChild(el4, el5);
+        var el5 = dom.createElement("li");
+        var el6 = dom.createElement("a");
+        dom.setAttribute(el6,"href","http://www.adobe.com/products/photoshop.html");
+        dom.setAttribute(el6,"target","_blank");
+        var el7 = dom.createTextNode("Adobe Photoshop CC");
+        dom.appendChild(el6, el7);
+        dom.appendChild(el5, el6);
+        dom.appendChild(el4, el5);
+        var el5 = dom.createTextNode("\n      ");
+        dom.appendChild(el4, el5);
+        dom.appendChild(el3, el4);
+        var el4 = dom.createTextNode("\n\n      ");
+        dom.appendChild(el3, el4);
+        var el4 = dom.createElement("h2");
+        dom.setAttribute(el4,"class","post-section-title");
+        var el5 = dom.createTextNode("Project Management");
+        dom.appendChild(el4, el5);
+        dom.appendChild(el3, el4);
+        var el4 = dom.createTextNode("\n      ");
+        dom.appendChild(el3, el4);
+        var el4 = dom.createElement("ul");
+        var el5 = dom.createTextNode("\n        ");
+        dom.appendChild(el4, el5);
+        var el5 = dom.createElement("li");
+        var el6 = dom.createElement("a");
+        dom.setAttribute(el6,"href","http://asana.com/");
+        var el7 = dom.createElement("strike");
+        var el8 = dom.createTextNode("Asana");
+        dom.appendChild(el7, el8);
+        dom.appendChild(el6, el7);
+        dom.appendChild(el5, el6);
+        dom.appendChild(el4, el5);
+        var el5 = dom.createTextNode("\n        ");
+        dom.appendChild(el4, el5);
+        var el5 = dom.createElement("li");
+        var el6 = dom.createElement("a");
+        dom.setAttribute(el6,"href","http://jira.com/");
+        var el7 = dom.createTextNode("JIRA");
+        dom.appendChild(el6, el7);
+        dom.appendChild(el5, el6);
+        var el6 = dom.createTextNode(": Initially, the entire company was using Asana for project management. This changed at the beginning of March when myself and two other individuals led the charge on migrating all management of engineering projects over to JIRA.");
+        dom.appendChild(el5, el6);
+        dom.appendChild(el4, el5);
+        var el5 = dom.createTextNode("\n      ");
+        dom.appendChild(el4, el5);
+        dom.appendChild(el3, el4);
+        var el4 = dom.createTextNode("\n\n      ");
+        dom.appendChild(el3, el4);
+        var el4 = dom.createElement("h2");
+        dom.setAttribute(el4,"class","post-section-title");
+        var el5 = dom.createTextNode("Feedback");
+        dom.appendChild(el4, el5);
+        dom.appendChild(el3, el4);
+        var el4 = dom.createTextNode("\n      ");
+        dom.appendChild(el3, el4);
+        var el4 = dom.createElement("ul");
+        var el5 = dom.createTextNode("\n        ");
+        dom.appendChild(el4, el5);
+        var el5 = dom.createElement("li");
+        var el6 = dom.createElement("a");
+        dom.setAttribute(el6,"href","http://basecamp.com/");
+        var el7 = dom.createTextNode("Basecamp");
+        dom.appendChild(el6, el7);
+        dom.appendChild(el5, el6);
+        dom.appendChild(el4, el5);
+        var el5 = dom.createTextNode("\n        ");
+        dom.appendChild(el4, el5);
+        var el5 = dom.createElement("li");
+        var el6 = dom.createElement("a");
+        dom.setAttribute(el6,"href","http://www.invisionapp.com/");
+        var el7 = dom.createTextNode("Invision");
+        dom.appendChild(el6, el7);
+        dom.appendChild(el5, el6);
+        dom.appendChild(el4, el5);
+        var el5 = dom.createTextNode("\n        ");
+        dom.appendChild(el4, el5);
+        var el5 = dom.createElement("li");
+        var el6 = dom.createElement("a");
+        dom.setAttribute(el6,"href","https://marvelapp.com/");
+        var el7 = dom.createTextNode("Marvel");
+        dom.appendChild(el6, el7);
+        dom.appendChild(el5, el6);
+        dom.appendChild(el4, el5);
+        var el5 = dom.createTextNode("\n      ");
+        dom.appendChild(el4, el5);
+        dom.appendChild(el3, el4);
+        var el4 = dom.createTextNode("\n    ");
+        dom.appendChild(el3, el4);
+        dom.appendChild(el2, el3);
+        var el3 = dom.createTextNode("\n  ");
+        dom.appendChild(el2, el3);
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n\n  ");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createElement("section");
+        dom.setAttribute(el2,"class","post-section post-section--text");
+        var el3 = dom.createTextNode("\n    ");
+        dom.appendChild(el2, el3);
+        var el3 = dom.createElement("div");
+        dom.setAttribute(el3,"class","container container--sm");
+        var el4 = dom.createTextNode("\n      ");
+        dom.appendChild(el3, el4);
+        var el4 = dom.createElement("div");
+        dom.setAttribute(el4,"class","post-section-header");
+        var el5 = dom.createTextNode("\n        ");
+        dom.appendChild(el4, el5);
+        var el5 = dom.createElement("h1");
+        dom.setAttribute(el5,"class","post-section-header-title");
+        var el6 = dom.createTextNode("Fit and Finish");
+        dom.appendChild(el5, el6);
+        dom.appendChild(el4, el5);
+        var el5 = dom.createTextNode("\n        ");
+        dom.appendChild(el4, el5);
+        var el5 = dom.createElement("p");
+        dom.setAttribute(el5,"class","post-section-header-blurb larger");
+        var el6 = dom.createTextNode("sdsd");
         dom.appendChild(el5, el6);
         dom.appendChild(el4, el5);
         var el5 = dom.createTextNode("\n      ");
@@ -4939,7 +5278,23 @@ define('karel/pods/post/design-analysis-zazzle-settings/template', ['exports'], 
         dom.appendChild(el3, el4);
         var el4 = dom.createElement("p");
         dom.setAttribute(el4,"class","post-section-text");
-        var el5 = dom.createTextNode("...");
+        var el5 = dom.createTextNode(" using ");
+        dom.appendChild(el4, el5);
+        var el5 = dom.createElement("a");
+        dom.setAttribute(el5,"href","http://bohemiancoding.com/sketch/");
+        dom.setAttribute(el5,"target","_blank");
+        var el6 = dom.createTextNode("Sketch");
+        dom.appendChild(el5, el6);
+        dom.appendChild(el4, el5);
+        var el5 = dom.createTextNode(" and ");
+        dom.appendChild(el4, el5);
+        var el5 = dom.createElement("a");
+        dom.setAttribute(el5,"href","http://www.adobe.com/products/photoshop.html");
+        dom.setAttribute(el5,"target","_blank");
+        var el6 = dom.createTextNode("Adobe Photoshop CC");
+        dom.appendChild(el5, el6);
+        dom.appendChild(el4, el5);
+        var el5 = dom.createTextNode(", ");
         dom.appendChild(el4, el5);
         dom.appendChild(el3, el4);
         var el4 = dom.createTextNode("\n    ");
@@ -4984,8 +5339,8 @@ define('karel/pods/post/design-analysis-zazzle-settings/template', ['exports'], 
         var attrMorph0 = dom.createAttrMorph(element0, 'id');
         var morph0 = dom.createMorphAt(dom.childAt(element1, [1]),0,0);
         var morph1 = dom.createMorphAt(dom.childAt(element1, [3, 1]),3,3);
-        var morph2 = dom.createMorphAt(dom.childAt(element0, [3, 1, 7]),1,1);
-        var morph3 = dom.createMorphAt(element0,19,19);
+        var morph2 = dom.createMorphAt(dom.childAt(element0, [3, 1, 7, 0]),1,1);
+        var morph3 = dom.createMorphAt(element0,25,25);
         attribute(env, attrMorph0, element0, "id", concat(env, ["article-", get(env, context, "model.id")]));
         content(env, morph0, context, "model.title");
         content(env, morph1, context, "model.date");
@@ -7579,6 +7934,7 @@ define('karel/router', ['exports', 'ember', 'karel/config/environment'], functio
     this.resource("portfolio", function () {
       this.route("themes");
       this.route("extensions");
+      this.route("clients");
     });
     this.route("resume");
     this.route("error", { path: "*path" });
@@ -7731,6 +8087,16 @@ define('karel/tests/pods/home/route.jshint', function () {
   module('JSHint - pods/home');
   test('pods/home/route.js should pass jshint', function() { 
     ok(true, 'pods/home/route.js should pass jshint.'); 
+  });
+
+});
+define('karel/tests/pods/portfolio/clients/route.jshint', function () {
+
+  'use strict';
+
+  module('JSHint - pods/portfolio/clients');
+  test('pods/portfolio/clients/route.js should pass jshint', function() { 
+    ok(true, 'pods/portfolio/clients/route.js should pass jshint.'); 
   });
 
 });
@@ -8103,6 +8469,31 @@ define('karel/tests/unit/pods/home/route-test.jshint', function () {
   module('JSHint - unit/pods/home');
   test('unit/pods/home/route-test.js should pass jshint', function() { 
     ok(true, 'unit/pods/home/route-test.js should pass jshint.'); 
+  });
+
+});
+define('karel/tests/unit/pods/portfolio/clients/route-test', ['ember-qunit'], function (ember_qunit) {
+
+  'use strict';
+
+  ember_qunit.moduleFor("route:portfolio/clients", {});
+
+  ember_qunit.test("it exists", function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+
+  // Specify the other units that are required for this test.
+  // needs: ['controller:foo']
+
+});
+define('karel/tests/unit/pods/portfolio/clients/route-test.jshint', function () {
+
+  'use strict';
+
+  module('JSHint - unit/pods/portfolio/clients');
+  test('unit/pods/portfolio/clients/route-test.js should pass jshint', function() { 
+    ok(true, 'unit/pods/portfolio/clients/route-test.js should pass jshint.'); 
   });
 
 });
