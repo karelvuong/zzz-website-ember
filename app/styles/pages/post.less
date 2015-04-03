@@ -69,18 +69,10 @@
         .post-masthead-category {
         }
 
-  .post-section {
-    & + &.post-section--text { margin-top: 80px; }
-    & + &.post-section--image { margin-top: 80px; }
+  .post-section--text {
+    & + .post-section--text { margin-top: 80px; }
+    & + .post-section--image { margin: 40px 0; }
   }
-    .post-section--image {
-      margin: 80px 0;
-
-      img {
-        height: auto;
-        width: 100%;
-      }
-    }
     .post-section-header {
       margin-bottom: 20px;
     }
@@ -88,16 +80,20 @@
         font-size: 30px;
         line-height: 1.2125;
       }
-      .post-section-header-subtitle {
+      .post-section-header-blurb {
         color: @headings-secondary-color;
         font-size: 24px;
       }
     .post-section-title {
-      font-size: 16px;
+      font-size: 18px;
       margin-top: 40px;
+    }
+    .post-section-subtitle {
+      font-size: 14px;
     }
     .post-section-text {
       line-height: 1.915;
+      margin-bottom: 0;
 
       &.larger {
         line-height: 1.6;
@@ -108,4 +104,27 @@
           color: #000000;
         }
       }
+
+      & + & {
+        margin-top: 20px;
+      }
     }
+    .post-section-figure {}
+      .post-section-figure--title {
+        color: @headings-color;
+        font-size: 12px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      .post-section-figure-image {
+        height: auto;
+        width: 100%;
+      }
+  .post-section--image {
+    background-color: #FAFAFA;
+    border: 1px solid #EAEAED;
+    margin: 80px 0;
+    padding: 80px 0;
+  }
+    .post-section--image--sm { margin: 40px 0; padding: 40px 0; }
+    .post-section--image--lg { margin: 120px 0; }
