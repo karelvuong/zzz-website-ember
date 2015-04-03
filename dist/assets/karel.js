@@ -1901,7 +1901,7 @@ define('karel/pods/home/template', ['exports'], function (exports) {
         var el7 = dom.createTextNode("On track:");
         dom.appendChild(el6, el7);
         dom.appendChild(el5, el6);
-        var el6 = dom.createTextNode(" 60 day streak");
+        var el6 = dom.createTextNode(" 62 day streak");
         dom.appendChild(el5, el6);
         dom.appendChild(el4, el5);
         var el5 = dom.createTextNode("\n      ");
