@@ -4595,7 +4595,7 @@ define('karel/pods/post/design-analysis-zazzle-settings/template', ['exports'], 
         dom.appendChild(el3, el4);
         var el4 = dom.createElement("p");
         dom.setAttribute(el4,"class","post-section-text");
-        var el5 = dom.createTextNode("We wanted the experience of moving from the profile to modifying your profile to be seamless and uninterrupted.");
+        var el5 = dom.createTextNode("We wanted the experience of moving from the profile to modifying your profile to be seamless and uninterrupted. ");
         dom.appendChild(el4, el5);
         dom.appendChild(el3, el4);
         var el4 = dom.createTextNode("\n    ");
@@ -4644,7 +4644,7 @@ define('karel/pods/post/design-analysis-zazzle-settings/template', ['exports'], 
         dom.appendChild(el3, el4);
         var el4 = dom.createElement("p");
         dom.setAttribute(el4,"class","post-section-text");
-        var el5 = dom.createTextNode("This is some text...");
+        var el5 = dom.createTextNode("Getting to the Settings was done by hovering over your icon in the header and clicking My Accounts or Edit Profile. Modifying your profile on a different page may lead to some confusion as you are no longer on the page you are editing. Sites like Facebook and Houzz address this by allowing users to edit their information from directly on the profile.");
         dom.appendChild(el4, el5);
         dom.appendChild(el3, el4);
         var el4 = dom.createTextNode("\n\n      ");
