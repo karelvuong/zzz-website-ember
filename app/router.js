@@ -19,6 +19,7 @@ Router.map(function() {
   this.resource('portfolio', function() {
     this.route('themes');
     this.route('extensions');
+    this.route('clients');
   });
   this.route('resume');
   this.route('error', { path: '*path' });
