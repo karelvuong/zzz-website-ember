@@ -492,15 +492,14 @@ h6,
   font-size: 12px;
 }
 p {
-  line-height: 1.6;
   margin: 0 0 10px;
 }
-.larger {
+.lead {
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 @media (min-width: 768px) {
-  .larger {
+  .lead {
     font-size: 18.2px;
   }
 }
@@ -2992,11 +2991,24 @@ div.mce_inline_error {
 .post-masthead-meta-item--tag {
   display: inline-block;
 }
+.post-section--text {
+  line-height: 1.915;
+}
 .post-section--text + .post-section--text {
   margin-top: 80px;
 }
 .post-section--text + .post-section--image {
   margin: 40px 0;
+}
+.post-section--text h1 {
+  font-size: 18px;
+  margin-top: 40px;
+}
+.post-section--text p {
+  margin-bottom: 0;
+}
+.post-section--text p + p {
+  margin-top: 20px;
 }
 .post-section-header {
   margin-bottom: 20px;
@@ -3009,25 +3021,8 @@ div.mce_inline_error {
   color: #96999a;
   font-size: 24px;
 }
-.post-section-title {
-  font-size: 18px;
-  margin-top: 40px;
-}
 .post-section-subtitle {
   font-size: 14px;
-}
-.post-section-text {
-  line-height: 1.915;
-  margin-bottom: 0;
-}
-.post-section-text.larger {
-  line-height: 1.6;
-}
-.post-section-text a:hover {
-  color: #000000;
-}
-.post-section-text + .post-section-text {
-  margin-top: 20px;
 }
 .post-section-figure--title {
   color: #333333;
