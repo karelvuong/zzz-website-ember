@@ -70,8 +70,23 @@
         }
 
   .post-section--text {
+    line-height: 1.915;
+
     & + .post-section--text { margin-top: 80px; }
     & + .post-section--image { margin: 40px 0; }
+
+    h1 {
+      font-size: 18px;
+      margin-top: 40px;
+    }
+
+    p {
+      margin-bottom: 0;
+
+      & + p {
+        margin-top: 20px;
+      }
+    }
   }
     .post-section-header {
       margin-bottom: 20px;
@@ -84,30 +99,8 @@
         color: @headings-secondary-color;
         font-size: 24px;
       }
-    .post-section-title {
-      font-size: 18px;
-      margin-top: 40px;
-    }
     .post-section-subtitle {
       font-size: 14px;
-    }
-    .post-section-text {
-      line-height: 1.915;
-      margin-bottom: 0;
-
-      &.larger {
-        line-height: 1.6;
-      }
-
-      a {
-        &:hover {
-          color: #000000;
-        }
-      }
-
-      & + & {
-        margin-top: 20px;
-      }
     }
     .post-section-figure {}
       .post-section-figure--title {
