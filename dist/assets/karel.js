@@ -4707,7 +4707,7 @@ define('karel/pods/post/design-analysis-zazzle-settings/template', ['exports'], 
         var el4 = dom.createTextNode("\n\n      ");
         dom.appendChild(el3, el4);
         var el4 = dom.createElement("p");
-        var el5 = dom.createTextNode("We wanted the experience of moving from the profile to modifying your profile to be seamless and uninterrupted. ");
+        var el5 = dom.createTextNode("We wanted to improve the experience of modifying your user and store settings. The primary goal was to provide users with a seamless way of transitioning from viewing their profile to editing their profile and settings. To go hand in hand with the new member and store profile, the settings were a prime candidate to accompany this design refresh.");
         dom.appendChild(el4, el5);
         dom.appendChild(el3, el4);
         var el4 = dom.createTextNode("\n    ");
