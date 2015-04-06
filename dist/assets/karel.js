@@ -9065,7 +9065,7 @@ catch(err) {
 if (runningTests) {
   require("karel/tests/test-helper");
 } else {
-  require("karel/app")["default"].create({"name":"karel","version":"0.0.0.20219776"});
+  require("karel/app")["default"].create({"name":"karel","version":"0.0.0.223b17d2"});
 }
 
 /* jshint ignore:end */
