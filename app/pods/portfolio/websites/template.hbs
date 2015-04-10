@@ -1,10 +1,8 @@
 <section class="masthead--portfolio masthead text-center">
-  <h1 class="masthead-title">Websites</h1>
+  <div class="container">
+    <h1 class="masthead-title">Websites</h1>
 
-  <p class="masthead-description">A collection of projects for various clients like <a href="#">1 Million Music Moments</a> and the <a href="">Toronto Youth Cabinet</a>.</p>
-
-  <div class="masthead-actions">
-    {{#link-to 'portfolio' class='masthead-btn btn'}}Back to Portfolio{{/link-to}}
+    <p class="masthead-description">A collection of projects for various clients like <a href="#">1 Million Music Moments</a> and the <a href="">Toronto Youth Cabinet</a>.</p>
   </div>
 </section>
 
@@ -27,3 +25,7 @@
 </div>
 
 {{outlet}}
+
+<div class="btn-section-footer btn-group row text-center">
+  {{#link-to 'portfolio' class='btn'}}Back to Portfolio{{/link-to}}
+</div>
