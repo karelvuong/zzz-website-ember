@@ -10,23 +10,29 @@
   </div>
 </section>
 
+<section class="section--ember section--xs">
+  <div class="container text-center">
+    <p><small>This website was created in <strong><a href="http://emberjs.com/" target="_blank">Ember.js</a> <a href="https://github.com/emberjs/ember.js/releases/tag/v1.11.0-beta.5" target="_blank">(1.11.0-beta.5)</a></strong> using <strong><a href="http://ember-cli.com" target="_blank">ember-cli</a> <a href="https://github.com/ember-cli/ember-cli/releases/tag/v0.2.3" target="_blank">(0.2.3)</a></strong> as an experiment and is available on <a href="https://github.com/karelvuong/website-ember"><strong>GitHub</strong></a>.</small></p>
+  </div>
+</section>
+
 <section class="section--posts section-border-top section--md">
   <div class="container">
     <div class="sub-section">
-      <h4>Recent Posts</h4>
+      <h4 class="text-center">Recent Posts</h4>
       <ul class="post-list">
         {{#each post in model}}
         <li class="post-list-item row">
-          {{#link-to post.url class='post-list-item-title pull-left'}}{{post.title}}{{/link-to}}
-          <div class="pull-right">
+          {{#link-to post.url class='post-list-item-title'}}{{post.title}}{{/link-to}}
+          <div class="post-list-item-meta">
             {{#if post.tags}}
-            <div class="post-list-item-tags pull-left">
+            <ul class="post-list-item-tags">
               {{#each tag in post.tags}}
-              <strong class="post-list-item-tag">{{tag}}</strong>
+              <li class="post-list-item-tag">{{tag}}</li>
               {{/each}}
-            </div>
+            </ul>
             {{/if}}
-            <p class="post-list-item-date pull-left">{{post.date}}</p>
+            <p class="post-list-item-date">{{post.date}}</p>
           </div>
         </li>
         {{/each}}
@@ -113,12 +119,6 @@
         <p class="list--accountability-item-text">Become a Player on <a href="https://dribbble.com">Dribbble</a> by the <strong>end of the year</strong>.</p>
       </li>
     </ul>
-  </div>
-</section>
-
-<section class="section--ember section--xs">
-  <div class="container text-center">
-    <p><small>This website was created in <strong><a href="http://emberjs.com/" target="_blank">Ember.js</a> <a href="https://github.com/emberjs/ember.js/releases/tag/v1.11.0-beta.5" target="_blank">(1.11.0-beta.5)</a></strong> using <strong><a href="http://ember-cli.com" target="_blank">ember-cli</a> <a href="https://github.com/ember-cli/ember-cli/releases/tag/v0.2.3" target="_blank">(0.2.3)</a></strong> as an experiment and is available on <a href="https://github.com/karelvuong/website-ember"><strong>GitHub</strong></a>.</small></p>
   </div>
 </section>
 
