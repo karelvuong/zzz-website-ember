@@ -1,7 +1,35 @@
-<div class="container">
-  <h4>Website Redesign</h4>
+<article id="article-{{model.id}}" class="article--karel">
+  <section class="post-section--masthead text-center">
+    <h1 class="post-masthead-title">{{model.title}}</h1>
 
-  <p>I'm still working on this post. Please check back soon!</p>
+    <div class="post-masthead-meta text-center">
+      <p class="post-masthead-meta-item post-masthead-meta-item--date">
+        <i class="oi" data-glyph="clock"></i> {{model.date}}
+      </p>
+    </div>
+
+    <div class="post-masthead-overlay"></div>
+  </section>
+
+  <section class="post-section post-section--text">
+    <div class="container container--sm">
+      <div class="post-section-header">
+        <p class="post-section-header-blurb lead">Iteration #8</p>
+      </div>
+
+      <p class="post-section-text lead">I know, I know... there's been so many iterations I can barely keep count.</p>
+
+      <p class="post-section-text">I'm not going to say that will be the last. What I will say is that I will complete all aspects of it before exploring a different design, this includes:</p>
+
+      <ul>
+        <li>A showcase of all of my work</li>
+        <li>My resume</li>
+      </ul>
+
+      <p class="post-section-text">I'm not going to say that will be the last. What I will say is that I will complete all aspects of it before exploring a different design, this includes:</p>
+
+    </div>
+  </section>
 
   {{outlet}}
-</div>
+</article>
