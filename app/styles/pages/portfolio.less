@@ -11,8 +11,8 @@
   }
     .portfolio-work {
       display: block;
-      height: 320px;
       opacity: 0.95;
+      overflow: hidden;
       position: relative;
       .transition(all 100ms cubic-bezier(0.68, 0, 0.265, 1));
 
@@ -20,27 +20,10 @@
         opacity: 1;
       }
 
-      & + & .portfolio-work-screenshot {
-        border-top: none;
+      & + & {
+        margin-top: 40px;
       }
     }
-      .portfolio-work--sm {
-        height: auto;
-
-        & + & {
-          border-top: 1px solid #212121;
-        }
-        .portfolio-work-information {
-          position: relative;
-        }
-      }
-        .portfolio-work--lg {
-          height: auto;
-
-          & + & {
-            margin-top: 40px;
-          }
-        }
       .portfolio-work-screenshot {
         background-position: center top;
         background-repeat: no-repeat;
@@ -53,10 +36,9 @@
         margin-bottom: 20px;
       }
       .portfolio-work-information {
-        background-color: fade(#000, 80);
+        background-color: #212121;
         color: #fff;
         padding: 20px;
-        position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
@@ -76,6 +58,10 @@
         }
         .portfolio-work-information-type {
           font-weight: 700;
+          margin-bottom: 10px;
+        }
+        .portfolio-work-information-description {
+          color: fade(#fff, 60);
         }
       .portfolio-work-collection {
         display: block;
