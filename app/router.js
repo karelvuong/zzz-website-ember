@@ -17,9 +17,9 @@ Router.map(function() {
     this.route('design-analysis-zazzle-settings');
   });
   this.resource('portfolio', function() {
+    this.route('websites');
     this.route('themes');
     this.route('extensions');
-    this.route('clients');
   });
   this.route('resume');
   this.route('error', { path: '*path' });

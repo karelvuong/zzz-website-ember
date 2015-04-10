@@ -3,7 +3,7 @@ import {
   test
 } from 'ember-qunit';
 
-moduleFor('route:portfolio/clients', {
+moduleFor('route:portfolio/websites', {
   // Specify the other units that are required for this test.
   // needs: ['controller:foo']
 });
