@@ -1,14 +1,12 @@
-<article id="article-{{model.id}}" class="article--karel">
-  <section class="post-section--masthead text-center">
-    <h1 class="post-masthead-title">{{model.title}}</h1>
+<article id="article-{{model.id}}">
+  <section class="masthead masthead--post masthead--inverted text-center" style="background-color: #212121;">
+    <h1 class="masthead-title">{{model.title}}</h1>
 
-    <div class="post-masthead-meta text-center">
-      <p class="post-masthead-meta-item post-masthead-meta-item--date">
+    <div class="masthead-meta text-center">
+      <div class="masthead-meta-item">
         <i class="oi" data-glyph="clock"></i> {{model.date}}
-      </p>
+      </div>
     </div>
-
-    <div class="post-masthead-overlay"></div>
   </section>
 
   <section class="post-section post-section--text">

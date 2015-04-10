@@ -1,18 +1,17 @@
-<article id="article-{{model.id}}" class="article--zazzle">
-  <section class="post-section--masthead text-center">
-    <h1 class="post-masthead-title">Zazzle Maker Dashboard</h1>
+<article id="article-{{model.id}}" class="accent--zazzle">
+  <section class="masthead masthead--post masthead--inverted text-center">
+    <h1 class="masthead-title">{{model.title}}</h1>
 
-    <div class="post-masthead-meta text-center">
-      <p class="post-masthead-meta-item post-masthead-meta-item--date">
+    <div class="masthead-meta text-center">
+      <div class="masthead-meta-item">
         <i class="oi" data-glyph="clock"></i> {{model.date}}
-      </p>
-      <ul class="post-masthead-meta-item post-masthead-meta-item--tags">
+      </div>
+
+      <ul class="masthead-meta-item masthead-meta-item--tags">
         <i class="oi" data-glyph="tags"></i>
-        <li class="post-masthead-meta-item--tag">Design Analysis</li>
+        <li class="masthead-meta-item--tag">Design Analysis</li>
       </ul>
     </div>
-
-    <div class="post-masthead-overlay"></div>
   </section>
 
   <section class="post-section post-section--text">
