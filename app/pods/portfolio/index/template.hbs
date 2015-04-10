@@ -21,29 +21,23 @@
 	  <h4 class="portfolio-work-title text-center">Collection</h4>
 	</div>
 
-  {{#link-to 'portfolio.clients' class='portfolio-work portfolio-work--small'}}
-  <div class="portfolio-work-information">
+	<div class="portfolio-work-collection text-center">
 		<div class="container">
-	    <p class="portfolio-work-information-title text-center">Client Work</p>
+		  {{#link-to 'portfolio.clients' class="portfolio-work-collection-title"}}Client Work{{/link-to}}
 		</div>
-  </div>
-  {{/link-to}}
+	</div>
 
-  {{#link-to 'portfolio.themes' class='portfolio-work portfolio-work--small'}}
-  <div class="portfolio-work-information">
+	<div class="portfolio-work-collection text-center">
 		<div class="container">
-	    <p class="portfolio-work-information-title text-center">Themes</p>
+		  {{#link-to 'portfolio.themes' class="portfolio-work-collection-title"}}Themes{{/link-to}}
 		</div>
-  </div>
-  {{/link-to}}
+	</div>
 
-  {{#link-to 'portfolio.extensions' class='portfolio-work portfolio-work--small'}}
-  <div class="portfolio-work-information">
+	<div class="portfolio-work-collection text-center">
 		<div class="container">
-	    <p class="portfolio-work-information-title text-center">Extensions</p>
+		  {{#link-to 'portfolio.extensions' class="portfolio-work-collection-title"}}Extensions{{/link-to}}
 		</div>
-  </div>
-  {{/link-to}}
+	</div>
 </div>
 
 {{outlet}}

@@ -57,6 +57,9 @@
         height: 320px;
         width: 100%;
       }
+        .portfolio-work-screenshot--lg {
+          height: 640px;
+        }
       .portfolio-work-title {
         margin-bottom: 20px;
       }
@@ -85,3 +88,16 @@
         .portfolio-work-information-type {
           font-weight: 700;
         }
+      .portfolio-work-collection {
+        display: block;
+        padding: 20px 0;
+
+        & + & {
+          border-top: 1px solid #ddd;
+        }
+      }
+      .portfolio-work-collection-title {
+        display: inline-block;
+        font-size: 32px;
+        font-weight: 700;
+      }
