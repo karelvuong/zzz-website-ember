@@ -1,16 +1,18 @@
 <article id="article-{{model.id}}" class="accent--blackberry">
   <section class="masthead masthead--post masthead--inverted text-center">
-    <h1 class="masthead-title">{{model.title}}</h1>
+    <div class="container">
+      <h1 class="masthead-title">{{model.title}}</h1>
 
-    <div class="masthead-meta text-center">
-      <div class="masthead-meta-item">
-        <i class="oi" data-glyph="clock"></i> {{model.date}}
+      <div class="masthead-meta text-center">
+        <div class="masthead-meta-item">
+          <i class="oi" data-glyph="clock"></i> {{model.date}}
+        </div>
+
+        <ul class="masthead-meta-item masthead-meta-item--tags">
+          <i class="oi" data-glyph="tags"></i>
+          <li class="masthead-meta-item--tag">Design Analysis</li>
+        </ul>
       </div>
-
-      <ul class="masthead-meta-item masthead-meta-item--tags">
-        <i class="oi" data-glyph="tags"></i>
-        <li class="masthead-meta-item--tag">Design Analysis</li>
-      </ul>
     </div>
   </section>
 

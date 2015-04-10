@@ -1,10 +1,12 @@
 <article id="article-{{model.id}}">
   <section class="masthead masthead--post masthead--inverted text-center" style="background-color: #212121;">
-    <h1 class="masthead-title">{{model.title}}</h1>
+    <div class="container">
+      <h1 class="masthead-title">{{model.title}}</h1>
 
-    <div class="masthead-meta text-center">
-      <div class="masthead-meta-item">
-        <i class="oi" data-glyph="clock"></i> {{model.date}}
+      <div class="masthead-meta text-center">
+        <div class="masthead-meta-item">
+          <i class="oi" data-glyph="clock"></i> {{model.date}}
+        </div>
       </div>
     </div>
   </section>
