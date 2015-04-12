@@ -10,7 +10,9 @@
 
         <ul class="masthead-meta-item masthead-meta-item--tags">
           <i class="oi" data-glyph="tags"></i>
-          <li class="masthead-meta-item--tag">Design Analysis</li>
+          {{#each tag in model.tags}}
+          <li class="masthead-meta-item--tag">{{tag}}</li>
+          {{/each}}
         </ul>
       </div>
     </div>
