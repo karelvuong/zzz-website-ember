@@ -68,15 +68,47 @@
         .portfolio-work-information-description {
           color: fade(#fff, 60);
         }
-      .portfolio-work-collection {
-        display: block;
-        padding: 20px 0;
 
-        & + & {
-          border-top: 1px solid #ddd;
+
+
+
+
+      .portfolio-collection {
+        display: table;
+        height: 320px;
+        padding: 20px;
+
+        .inner {
+          border: 1px solid #ddd;
+          display: table-cell;
+          position: relative;
+          text-align: center;
+          vertical-align: middle;
+
+          &:before {
+            content: "";
+            background-color: fade(#fff, 80);
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+          }
+        }
+
+        .text {
+          position: relative;
+        }
+          .title {
+            font-size: 24px;
+            margin-bottom: 0;
+          }
+
+        @media (max-width: @screen-sm-max) {
+          width: 100%;
         }
       }
-      .portfolio-work-collection-title {
-        display: inline-block;
-        font-size: 24px;
-      }
+        .portfolio-collection--extensions {
+          background: url('/assets/images/portfolio/collections/extensions.jpg');
+          background-size: cover;
+        }
