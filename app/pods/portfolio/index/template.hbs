@@ -1,5 +1,5 @@
 <div class="portfolio-section--work container">
-  <h4 class="portfolio-work-title text-center">Featured Work</h4>
+  <h2 class="text-center">Featured Work</h2>
 
   <div class="portfolio-work">
     <a class="portfolio-work-screenshot" href="https://github.com/karelvuong/st-primer">
@@ -28,26 +28,35 @@
 
 <div class="portfolio-section--work">
 	<div class="container">
-	  <h4 class="portfolio-work-title text-center">Collection</h4>
+	  <h2 class="text-center">Collection</h2>
+
+    <div class="row">
+      <div class="portfolio-collection col-sm-6">
+    	  {{#link-to 'portfolio.websites' class="inner"}}
+          <div class="text">
+            <p class="title">Websites</p>
+          </div>
+        {{/link-to}}
+      </div>
+
+      <div class="portfolio-collection col-sm-6">
+    	  {{#link-to 'portfolio.themes' class="inner"}}
+          <div class="text">
+            <p class="title">Themes</p>
+          </div>
+        {{/link-to}}
+      </div>
+
+      <div class="portfolio-collection col-sm-6">
+    	  {{#link-to 'portfolio.extensions' class="inner portfolio-collection--extensions"}}
+          <div class="text">
+            <p class="title">Extensions</p>
+          </div>
+        {{/link-to}}
+      </div>
+    </div>
 	</div>
 
-	<div class="portfolio-work-collection text-center">
-		<div class="container">
-		  {{#link-to 'portfolio.websites' class="portfolio-work-collection-title"}}Websites{{/link-to}}
-		</div>
-	</div>
-
-	<div class="portfolio-work-collection text-center">
-		<div class="container">
-		  {{#link-to 'portfolio.themes' class="portfolio-work-collection-title"}}Themes{{/link-to}}
-		</div>
-	</div>
-
-	<div class="portfolio-work-collection text-center">
-		<div class="container">
-		  {{#link-to 'portfolio.extensions' class="portfolio-work-collection-title"}}Extensions{{/link-to}}
-		</div>
-	</div>
 </div>
 
 {{outlet}}
