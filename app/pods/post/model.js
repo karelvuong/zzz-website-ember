@@ -43,6 +43,24 @@ Post.reopenClass({
       tags: [
         "Design Analysis"
       ]
+    },
+    {
+      id: 5,
+      title: 'Joining Vidyard',
+      url: 'post.announcement-joining-vidyard',
+      date: 'Apr 25, 2015',
+      tags: [
+        "Announcement"
+      ]
+    },
+    {
+      id: 6,
+      title: 'Joining Zazzle',
+      url: 'post.announcement-joining-zazzle',
+      date: 'Jan 01, 2015',
+      tags: [
+        "Announcement"
+      ]
     }
   ]
 });
