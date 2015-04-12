@@ -11,10 +11,12 @@ Router.map(function() {
   this.route('equipment');
   this.resource('posts');
   this.route('post', { path: '/post' }, function() {
-    this.route('website-redesign');
+    this.route('announcement-joining-vidyard');
     this.route('design-analysis-zazzle-maker');
     this.route('design-analysis-blackberry-flow');
     this.route('design-analysis-zazzle-settings');
+    this.route('website-redesign');
+    this.route('announcement-joining-zazzle');
   });
   this.resource('portfolio', function() {
     this.route('websites');

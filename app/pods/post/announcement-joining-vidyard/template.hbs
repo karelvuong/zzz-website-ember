@@ -1,0 +1,33 @@
+<article id="article-{{model.id}}" class="accent--vidyard">
+  <section class="masthead masthead--post masthead--inverted text-center">
+    <div class="container">
+      <h1 class="masthead-title">{{model.title}}</h1>
+
+      <div class="masthead-meta text-center">
+        <div class="masthead-meta-item">
+          <i class="oi" data-glyph="clock"></i> {{model.date}}
+        </div>
+
+        <ul class="masthead-meta-item masthead-meta-item--tags">
+          <i class="oi" data-glyph="tags"></i>
+          {{#each tag in model.tags}}
+          <li class="masthead-meta-item--tag">{{tag}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section--text">
+    <div class="container container--sm">
+      <h1>Web Developer Intern</h1>
+      <p class="subtitle">Marketing, Vidyard</p>
+
+      <p class="lead">I'm happy to announce that I will be joining Vidyard's Marketing team as a Web Developer Intern.</p>
+
+      <p>Over the course of the next four months, I will be working on <a href="http://vidyard.com">www.vidyard.com</a>, an exciting project that I can't wait to get started on!</p>
+    </div>
+  </section>
+
+  {{outlet}}
+</article>
