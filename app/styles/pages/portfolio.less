@@ -84,22 +84,13 @@
           position: relative;
           text-align: center;
           vertical-align: middle;
-
-          &:before {
-            content: "";
-            background-color: fade(#fff, 80);
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-          }
         }
 
         .text {
           position: relative;
         }
           .title {
+            color: #fff;
             font-size: 24px;
             margin-bottom: 0;
           }
@@ -108,7 +99,15 @@
           width: 100%;
         }
       }
-        .portfolio-collection--extensions {
-          background: url('/assets/images/portfolio/collections/extensions.jpg');
+        .portfolio-collection-image {
           background-size: cover;
+        }
+        .portfolio-collection--extensions {
+          background: url('/assets/images/portfolio/collections/extensions.png');
+        }
+        .portfolio-collection--themes {
+          background: url('/assets/images/portfolio/collections/themes.png');
+        }
+        .portfolio-collection--websites {
+          background: url('/assets/images/portfolio/collections/websites.png');
         }
