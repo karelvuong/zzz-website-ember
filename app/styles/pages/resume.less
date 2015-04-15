@@ -42,9 +42,6 @@
       }
     }
       .resume-item-header-info {}
-      .resume-item-header-right {
-        padding-right: 40px;
-      }
 
       .resume-item-header-img {
         height: auto;
@@ -82,11 +79,12 @@
     .resume-item-body {}
       .resume-item-details {}
         .resume-item-details-list {
-          & + & {
+          & + .resume-item-details-list {
             margin-top: 20px;
           }
         }
         .resume-item-details-list-heading {
+          margin-top: 0;
           margin-bottom: 0;
 
           strong {
