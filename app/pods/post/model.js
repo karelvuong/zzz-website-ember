@@ -1,11 +1,16 @@
 import DS from 'ember-data';
 
-var Post = DS.Model.extend({
-  title:          DS.attr('string'),
-  organization:   DS.attr('string'),
-  url:            DS.attr('string'),
-  date:           DS.attr('date'),
-  tags:           DS.attr('array')
+var computed = Ember.computed;
+var alias = computed.alias;
+var attr = DS.attr;
+var Model = DS.Model;
+
+var Post = Model.extend({
+  title:          attr('string'),
+  organization:   attr('string'),
+  url:            attr('string'),
+  date:           attr('date'),
+  tags:           attr('array')
 });
 
 Post.reopenClass({
