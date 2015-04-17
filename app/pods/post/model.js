@@ -1,7 +1,5 @@
 import DS from 'ember-data';
 
-var computed = Ember.computed;
-var alias = computed.alias;
 var attr = DS.attr;
 var Model = DS.Model;
 
