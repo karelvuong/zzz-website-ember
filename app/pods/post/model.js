@@ -55,15 +55,6 @@ Post.reopenClass({
       tags: [
         "Announcement"
       ]
-    },
-    {
-      id: 6,
-      title: 'Joining Zazzle',
-      url: 'post.announcement-joining-zazzle',
-      date: 'Jan 01, 2015',
-      tags: [
-        "Announcement"
-      ]
     }
   ]
 });
