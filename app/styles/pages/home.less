@@ -1,7 +1,15 @@
+/*
+ * Page (Home)
+ */
 .page--home {
   padding-top: 0;
 }
 
+/*
+ * Section (Hero)
+ *
+ *
+ */
 .section--hero {
   background: url('./images/bg.png') center center repeat;
   position: relative;
@@ -30,10 +38,12 @@
     & + & {
       margin-top: 40px;
     }
-  }
-    .post-list-heading {
+
+    // Heading
+    &-heading {
       text-align: center;
     }
+  }
     .post-list-item {
       @media (max-width: @screen-sm-max) {
         text-align: center;
