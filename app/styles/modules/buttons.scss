@@ -1,0 +1,35 @@
+.btn {
+  background-color: transparent;
+  border: $button-border-size solid;
+  border-radius: $button-radius;
+  border-color: $button-border-color;
+  color: $button-text-color;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: $button-text-weight;
+  height: 32px;
+  padding: 7px 12px;
+  text-transform: uppercase;
+  @include transition(all 200ms cubic-bezier(0.68, 0, 0.265, 1));
+
+  &:hover {
+    border-color: $button-border-hover-color;
+    color: $button-text-hover-color;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+  .btn--inverted {
+    border-color: $button-border-inverted-color;
+    color: $button-text-inverted-color;
+  }
+  .btn--no-border {
+    border: 0;
+  }
+
+.btn-section-footer {
+  margin-top: 60px;
+}

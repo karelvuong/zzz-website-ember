@@ -1,0 +1,150 @@
+.page--post {
+  .accent--blackberry {
+    .masthead { background-color: #212121; }
+  }
+
+  .accent--vidyard {
+    .accent-clr { color: #70AE44; }
+    .masthead { background-color: #70AE44; }
+  }
+
+  .accent--zazzle {
+    .accent-clr { color: #419AF0; }
+    .masthead { background-color: #419AF0; }
+  }
+}
+
+.section {
+  & + & {
+    margin-top: 120px;
+  }
+}
+  .section--intro {
+    .section--toc {
+      padding-right: 20px;
+
+      h1 {
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+    }
+
+    .section--text {
+      padding-left: 20px;
+
+      h1,
+      .subtitle {
+        text-align: left;
+      }
+    }
+
+    @media (max-width: $screen-sm-max) {
+      .section--toc,
+      .section--text {
+        padding: 0;
+      }
+
+      .section--toc {
+        border-bottom: 1px solid #777a7a;
+        margin-bottom: 80px;
+        padding: 20px;
+      }
+    }
+  }
+
+.section--text {
+  .icon {
+    display: block;
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 30px;
+    line-height: 1.2125;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+    .subtitle {
+      font-size: 24px;
+      line-height: 1.4125;
+      margin-bottom: 20px;
+    }
+    h1,
+    .subtitle {
+      text-align: center;
+    }
+
+  h2 {
+    margin-top: 40px;
+  }
+
+  h3 {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  p {
+    line-height: 1.915;
+    margin-bottom: 0;
+
+    & + p {
+      margin-top: 20px;
+    }
+
+    & + ul,
+    & + ol {
+      margin-top: 10px;
+    }
+  }
+
+  ul,
+  ol {
+    margin-bottom: 20px;
+  }
+
+  li {
+    line-height: 1.815;
+  }
+}
+
+.section--image {
+  background-color: #FAFAFA;
+  border-top: 1px solid #EAEAED;
+  border-bottom: 1px solid #EAEAED;
+  margin: 80px 0;
+  padding: 80px 0;
+}
+  .section--image--sm { margin: 40px 0; padding: 40px 0; }
+  .section--image--lg { margin: 120px 0; }
+
+
+
+
+
+
+
+
+    .post-section-figure {}
+      .post-section-figure--title {
+        color: $headings-color;
+        font-size: 12px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      .post-section-figure-image {
+        height: auto;
+        width: 100%;
+      }
