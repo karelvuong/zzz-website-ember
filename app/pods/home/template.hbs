@@ -1,7 +1,7 @@
 <section class="section--hero section--lg">
   <div class="container container--sm">
     <h1>Hi, I'm Karel.</h1>
-    <p class="lead">I'm a <span class="t-underline">Product Manager at Zazzle</span>.</p>
+    <p class="lead">I'm a <span class="t-underline">Web Developer at Vidyard</span>.</p>
     <p>I am a <span class="u-clr-0">designer</span> at heart and a <span class="u-clr-0">front-end engineer</span> on the side. Occasionally, I'll write things {{#link-to 'posts'}}here{{/link-to}}, but you can hear from me more regularly at <a href="https://twitter.com/karelvuong" target="_blank">@karelvuong</a>.</p>
 
     <p class="small">Sign up for my mailing list if you want to know when I post something.</p>
@@ -18,8 +18,10 @@
 
 <section class="section--posts section-border-top section--md">
   <div class="container">
-    <div class="sub-section">
+    <div class="section-header">
       <h2 class="text-center">Recent Posts</h2>
+    </div>
+    <div class="section-body">
       <ul class="post-list">
         {{#each post in model}}
         <li class="post-list-item row">
@@ -38,12 +40,12 @@
         {{/each}}
       </ul>
     </div>
+  </div>
 
-    <div class="row text-center">
-      <div class="btn-section-footer btn-group">
-        {{#link-to 'posts' class="btn"}}View posts{{/link-to}}
-        <a class="btn btn--no-border" href="https://quora.com/Karel-Vuong">Quora</a>
-      </div>
+  <div class="row text-center">
+    <div class="btn-section-footer btn-group">
+      {{#link-to 'posts' class="btn"}}View posts{{/link-to}}
+      <a class="btn btn--no-border" href="https://quora.com/Karel-Vuong">Quora</a>
     </div>
   </div>
 </section>
@@ -105,16 +107,19 @@
 
       <li class="list--accountability-item list--accountability-item--green row">
         <p class="list--accountability-item-text">Commit to <a href="https://github.com/karelvuong" target="_blank">GitHub</a> at least <strong>once a day</strong>.</p>
-        <small><strong>On track:</strong> 83 day streak</small>
+        <small><strong>On track:</strong> 91 day streak</small>
       </li>
+
       <li class="list--accountability-item list--accountability-item--yellow row">
         <p class="list--accountability-item-text">Sketch at least <strong>once a month</strong>.</p>
         <small><strong>On track:</strong> April</small>
       </li>
-      <li class="list--accountability-item list--accountability-item--yellow row">
-        <p class="list--accountability-item-text">Conduct a design analysis at least <strong>once a month</strong>.</p>
+
+      <li class="list--accountability-item row">
+        <p class="list--accountability-item-text">Conduct a design analysis at least <strong>once a year</strong>.</p>
         <small><strong>On track:</strong> In Progress</small>
       </li>
+
       <li class="list--accountability-item row">
         <p class="list--accountability-item-text">Become a Player on <a href="https://dribbble.com">Dribbble</a> by the <strong>end of the year</strong>.</p>
       </li>
