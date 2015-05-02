@@ -93,6 +93,10 @@ img {
   height: auto; // Part 2: Scale the height according to the width, otherwise
 }
 
+.img--sm {
+  width: 320px;
+}
+
 // Rounded corners
 .img-rounded {
   border-radius: $border-radius-large;
