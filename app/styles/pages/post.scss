@@ -12,6 +12,10 @@
     .accent-clr { color: #419AF0; }
     .masthead { background-color: #419AF0; }
   }
+
+  .btn-section-footer {
+    margin-top: 80px;
+  }
 }
 
 .section {
@@ -127,14 +131,22 @@
     line-height: 1.815;
   }
 }
+  .callout {
+    background-color: #eee;
+    margin: 20px 0;
+    padding: 20px;
+  }
 
 .section--image {
-  background-color: #FAFAFA;
-  border-top: 1px solid #EAEAED;
-  border-bottom: 1px solid #EAEAED;
-  margin: 80px 0;
-  padding: 80px 0;
+  margin-bottom: 40px;
 }
+  .section--image--boxed {
+    background-color: #FAFAFA;
+    border-top: 1px solid #EAEAED;
+    border-bottom: 1px solid #EAEAED;
+    margin: 80px 0;
+    padding: 80px 0;
+  }
   .section--image--sm { margin: 40px 0; padding: 40px 0; }
   .section--image--lg { margin: 120px 0; }
 
