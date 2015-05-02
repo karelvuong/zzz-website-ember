@@ -100,6 +100,10 @@
     line-height: 1.915;
     margin-bottom: 0;
 
+    &.lead {
+      line-height: 1.6125;
+    }
+
     & + p {
       margin-top: 20px;
     }
