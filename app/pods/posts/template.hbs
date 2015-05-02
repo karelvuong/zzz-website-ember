@@ -4,7 +4,7 @@
       <h2 class="text-center">Written by Me</h2>
 
       <ul class="post-list">
-        <h5 class="post-list-heading">Posts on {{#link-to 'posts'}}karel.ca{{/link-to}}</h5>
+        <h5 class="text-center">Posts on {{#link-to 'posts'}}karel.ca{{/link-to}}</h5>
         {{#each post in model.posts}}
         <li class="post-list-item row">
           {{#link-to post.url class='post-list-item-title'}}{{post.title}}{{/link-to}}
@@ -23,7 +23,7 @@
       </ul>
 
       <ul class="post-list">
-        <h5 class="post-list-heading">Answers on <a href="https://quora.com/Karel-Vuong">Quora</a></h5>
+        <h5 class="text-center">Answers on <a href="https://quora.com/Karel-Vuong">Quora</a></h5>
         <p class="post-list-text">Question titles may have been shortened and rephrased.</p>
 
         {{#each article in model.answers}}
