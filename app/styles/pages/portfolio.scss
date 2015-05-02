@@ -10,6 +10,7 @@
     }
   }
     .portfolio-work {
+      border: 1px solid #eee;
       display: block;
       opacity: 0.95;
       overflow: hidden;
@@ -66,7 +67,7 @@
           margin-bottom: 10px;
         }
         .portfolio-work-information-description {
-          color: fade(#fff, 60);
+          color: rgba(#fff, 0.6);
         }
 
 
@@ -75,7 +76,7 @@
 
       .portfolio-collection {
         display: table;
-        height: 320px;
+        height: 240px;
         padding: 20px;
 
         .inner {
@@ -90,7 +91,7 @@
           position: relative;
         }
           .title {
-            color: #fff;
+            color: #333;
             font-size: 24px;
             margin-bottom: 0;
           }
@@ -103,11 +104,11 @@
           background-size: cover;
         }
         .portfolio-collection--extensions {
-          background: url('/assets/images/portfolio/collections/extensions.png');
+          background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJklEQVQYV2NkIBIwEqmOgT4KjaHOOYvsLGxWE60Qq//o4xmsVgMAmKgCC2uLAkQAAAAASUVORK5CYII=") repeat;
         }
         .portfolio-collection--themes {
-          background: url('/assets/images/portfolio/collections/themes.png');
+          background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAL0lEQVQYV2NkIBIwEqmOgWyFxgwMDGex2YLNRKyKcVmNoRifG1EUk+0ZnKFFtIkAK8YEC2R1ptwAAAAASUVORK5CYII=") repeat;
         }
         .portfolio-collection--websites {
-          background: url('/assets/images/portfolio/collections/websites.png');
+          background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAALElEQVQYV2NkYGAwZmBgOItEM2ADjFBBmGKsikCCIIUkmYjTJJgEzOqRpRAAB84FC7W4QyAAAAAASUVORK5CYII=") repeat;
         }
