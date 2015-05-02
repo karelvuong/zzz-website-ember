@@ -1,5 +1,5 @@
 .page {
-  padding-top: 70px;
+  padding-top: 90px;
   padding-bottom: 80px;
 }
   .page--has-masthead {
@@ -13,6 +13,12 @@
 .page--post {
   figure {
     text-align: center;
+  }
+}
+
+.section-header {
+  & + .section-body {
+    margin-top: 40px;
   }
 }
 
