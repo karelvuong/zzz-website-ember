@@ -89,11 +89,15 @@
 
   h2 {
     margin-top: 40px;
+
+    & + h3 {
+      margin-top: 20px;
+    }
   }
 
   h3 {
     font-size: 14px;
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   p {
