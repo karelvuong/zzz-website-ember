@@ -218,7 +218,8 @@
   .list--accountability {
     list-style: none;
     margin: 0 auto;
-    width: 360px;
+    padding: 0;
+    max-width: 360px;
   }
     .list--accountability-item {
       & + & {
