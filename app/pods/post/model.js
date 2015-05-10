@@ -55,6 +55,13 @@ Post.reopenClass({
       tags: [
         "Announcement"
       ]
+    },
+    {
+      id: 6,
+      title: 'Styleguide',
+      url: 'post.styleguide',
+      date: 'May 5, 2015',
+      tags: []
     }
   ]
 });

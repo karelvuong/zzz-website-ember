@@ -16,6 +16,7 @@ Router.map(function() {
     this.route('design-analysis-blackberry-flow');
     this.route('design-analysis-zazzle-settings');
     this.route('website-redesign');
+    this.route('styleguide');
   });
   this.resource('portfolio', function() {
     this.route('websites');

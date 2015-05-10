@@ -1,0 +1,58 @@
+<article id="article-{{model.id}}" class="accent--{{model.string}}">
+  <section class="masthead masthead--post text-center">
+    <div class="container">
+      <h1 class="masthead-title">{{model.title}}</h1>
+
+      <div class="masthead-meta text-center">
+        <div class="masthead-meta-item">
+          <i class="oi" data-glyph="clock"></i> {{model.date}}
+        </div>
+
+        {{#if model.tags}}
+        <ul class="masthead-meta-item masthead-meta-item--tags">
+          <i class="oi" data-glyph="tags"></i>
+          {{#each tag in model.tags}}
+          <li class="masthead-meta-item--tag">{{tag}}</li>
+          {{/each}}
+        </ul>
+        {{/if}}
+      </div>
+    </div>
+  </section>
+
+  <section class="section--text section">
+    <div class="container container--sm">
+      <h1># Heading 1</h1>
+      <p class="subtitle">Subtitle</p>
+
+      <p class="lead">This is some <strong>lead</strong> text. It is meant to stand out from the rest of the body text.</p>
+
+      <p>
+        This is <strong>body</strong> text. This is what the bulk of the page will consist of. Use this to craft a story to tell to your readers. Body text can have <strong>strong</strong>, <em>emphasized</em>, and <u>underlined</u> elements to it. It can also contain <a>internal</a> and <a>external</a> links. If it is an external link, always open these in new tabs.
+      </p>
+
+      <div class="callout">
+        <p class="lead">
+          Use <strong>callouts</strong> to highlight important blocks of information that you wish to stand out to the reader.
+        </p>
+      </div>
+
+      <p>
+        You can also <mark>highlight</mark> text as well.
+      </p>
+
+      <h2>## Heading 2</h2>
+      <p class="lead">
+        Use this heading to add sections to your body.
+      </p>
+
+      <p>
+        If this isn't enough and you need to off your body even more, you can use
+      </p>
+
+      <h3>### Heading 3</h3>
+    </div>
+  </section>
+
+  {{outlet}}
+</article>

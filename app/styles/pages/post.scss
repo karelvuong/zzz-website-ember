@@ -135,6 +135,11 @@
     background-color: #eee;
     margin: 20px 0;
     padding: 20px;
+
+    *:first-child {
+      margin-top: 0;
+      padding-top: 0;
+    }
   }
 
 .section--image {
