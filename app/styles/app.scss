@@ -5,16 +5,17 @@
 // Reset and dependencies
 @import "normalize";
 
-// Core CSS
+// Core
 @import "base";
 @import "type";
 @import "utilities";
 @import "icons";
 @import "grid";
 
-// Modules
-@import "modules/form";
-@import "modules/buttons";
+// Components
+@import "components/accents";
+@import "components/buttons";
+@import "components/form";
 
 // ---
 

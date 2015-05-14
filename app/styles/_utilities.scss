@@ -20,24 +20,11 @@
 }
 
 
-// Text
-// -------------------------
-
-.t-uppercase {
-  text-transform: uppercase;
-}
-
-.t-underline {
-  text-decoration: none;
-  border-bottom: 1px solid;
-}
-
-
 // Toggling content
 // -------------------------
 
 // Note: Deprecated .hide in favor of .hidden or .sr-only (as appropriate) in v3.0.1
-.hide {
+.hidden {
   display: none !important;
 }
 .show {
@@ -45,16 +32,4 @@
 }
 .invisible {
   visibility: hidden;
-}
-.text-hide {
-  @include text-hide;
-}
-
-
-// Hide from screenreaders and browsers
-//
-// Credit: HTML5 Boilerplate
-
-.hidden {
-  display: none !important;
 }

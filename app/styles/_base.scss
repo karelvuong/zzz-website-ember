@@ -9,13 +9,12 @@
 // For recommendations on resolving such conflicts, see
 // http://getbootstrap.com/getting-started/#third-box-sizing
 * {
-  @include box-sizing(border-box);
+  &,
+  &:before,
+  &:after {
+    @include box-sizing(border-box);
+  }
 }
-*:before,
-*:after {
-  @include box-sizing(border-box);
-}
-
 
 // Body reset
 
@@ -30,6 +29,7 @@ body {
   line-height: $line-height-base;
   color: $text-color;
   background-color: $body-bg;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

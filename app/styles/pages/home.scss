@@ -27,6 +27,13 @@
   .container {
     position: relative;
   }
+
+  .lead span {
+    background-color: $clr-vidyard;
+    color: #fff;
+    display: inline-block;
+    padding: 0 3px;
+  }
 }
 
 // section--post

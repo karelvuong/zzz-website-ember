@@ -5,7 +5,6 @@
 
 //== Colors
 //
-//## Gray and brand colors for use across Bootstrap.
 
 $gray-base:              #000;
 $gray-darker:            lighten($gray-base, 13.5%); // #222
@@ -20,12 +19,23 @@ $brand-info:            #5bc0de;
 $brand-warning:         #f0ad4e;
 $brand-danger:          #d9534f;
 
+//** Company Colours
+
 $clr-dribbble:          #EA4C89;
 $clr-ember:             #E3543B;
 $clr-github:            #BD2C00;
 $clr-linkedin:          #0976B4;
 $clr-quora:             #A82400;
 $clr-twitter:           #55ACEE;
+$clr-vidyard:           #70AE44;
+$clr-zazzle:            #419AF0;
+
+.bg-vidyard {
+  background-color: $clr-vidyard;
+
+  &--before:before { background-color: $clr-vidyard; }
+  &--after:after { background-color: $clr-vidyard; }
+}
 
 /*
 #777A7A
@@ -256,8 +266,6 @@ $blockquote-small-color:      $gray-light;
 $blockquote-font-size:        ($font-size-base * 1.25);
 //** Blockquote border color
 $blockquote-border-color:     $gray-lighter;
-//** Page header border color
-$page-header-border-color:    $gray-lighter;
 //** Width of horizontal description list titles
 $dl-horizontal-offset:        $component-offset-horizontal;
 //** Horizontal line color.
