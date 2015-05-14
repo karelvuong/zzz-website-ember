@@ -2,6 +2,34 @@
 // Variables
 // --------------------------------------------------
 
+//== Company Colors
+$colors: (
+  blackberry:           #000000,
+  dribbble:             #EA4C89,
+  ember:                #E3543B,
+  github:               #BD2C00,
+  linkedin:             #0976B4,
+  quora:                #A82400,
+  twitter:              #55ACEE,
+  vidyard:              #70AE44,
+  zazzle:               #419AF0
+);
+
+@each $color, $color in $colors {
+  .bg-#{$color} {
+    background-color: $color;
+
+    &--before:before { background-color: $color; }
+    &--after:after { background-color: $color; }
+  }
+}
+
+/*
+#777A7A
+
+#333333
+#101113
+*/
 
 //== Colors
 //
@@ -19,38 +47,11 @@ $brand-info:            #5bc0de;
 $brand-warning:         #f0ad4e;
 $brand-danger:          #d9534f;
 
-//** Company Colours
-
-$clr-dribbble:          #EA4C89;
-$clr-ember:             #E3543B;
-$clr-github:            #BD2C00;
-$clr-linkedin:          #0976B4;
-$clr-quora:             #A82400;
-$clr-twitter:           #55ACEE;
-$clr-vidyard:           #70AE44;
-$clr-zazzle:            #419AF0;
-
-.bg-vidyard {
-  background-color: $clr-vidyard;
-
-  &--before:before { background-color: $clr-vidyard; }
-  &--after:after { background-color: $clr-vidyard; }
-}
-
-/*
-#777A7A
-
-#333333
-#101113
-*/
-
-//== Scaffolding
+//== Base
 //
 //## Settings for some of the most global styles.
 
-//** Background color for `<body>`.
 $body-bg:               #fff;
-//** Global text color on `<body>`.
 $text-color:            #777a7a;
 
 $headings-secondary-color: #96999a;
@@ -58,10 +59,11 @@ $headings-secondary-color: #96999a;
 $mark-bg:               #FFF3B3;
 
 //** Global textual link color.
-$link-color:            #3e79a0;
-$link-hover-color:      darken($link-color, 15%);
+$link-color:                  #3e79a0;
+$link-decoration:             none;
+$link-hover-color:            darken($link-color, 15%);
 $link-hover-color-light:      lighten($link-color, 15%);
-$link-hover-decoration: none;
+$link-hover-decoration:       none;
 
 $header-name-color:           #000000;
 $header-link-color:           #101113;
