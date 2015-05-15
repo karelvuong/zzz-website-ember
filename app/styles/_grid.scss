@@ -10,19 +10,13 @@
 .container {
   @include container-fixed;
 
-  @media (min-width: $screen-sm-min) {
-    width: $container-sm;
-  }
-  @media (min-width: $screen-md-min) {
-    width: $container-md;
-  }
-  @media (min-width: $screen-lg-min) {
-    width: $container-lg;
-  }
+  @media (min-width: $screen-sm-min) { width: $container-sm; }
+  @media (min-width: $screen-md-min) { width: $container-md; }
+  @media (min-width: $screen-lg-min) { width: $container-lg; }
 }
-  .container--sm {
-    max-width: 640px;
-  }
+  .container--sm { max-width: $container-sm; }
+  .container--md { max-width: $container-md; }
+  .container--lg { max-width: $container-lg; }
 
 
 // Fluid container
@@ -61,27 +55,17 @@
 
 // Small grid
 //
-// Columns, offsets, pushes, and pulls for the small device range, from phones
-// to tablets.
 
-@media (min-width: $screen-sm-min) {
-  @include make-grid(sm);
-}
+@media (min-width: $screen-sm-min) { @include make-grid(sm); }
 
 
 // Medium grid
 //
-// Columns, offsets, pushes, and pulls for the desktop device range.
 
-@media (min-width: $screen-md-min) {
-  @include make-grid(md);
-}
+@media (min-width: $screen-md-min) { @include make-grid(md); }
 
 
 // Large grid
 //
-// Columns, offsets, pushes, and pulls for the large desktop device range.
 
-@media (min-width: $screen-lg-min) {
-  @include make-grid(lg);
-}
+@media (min-width: $screen-lg-min) { @include make-grid(lg); }

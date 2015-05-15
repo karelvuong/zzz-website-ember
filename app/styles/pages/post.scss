@@ -1,16 +1,21 @@
 .page--post {
+  .accent--personal-blue {
+    .accent-clr { color: #17A0E6; }
+    .masthead { background-color: #17A0E6; }
+  }
+
   .accent--blackberry {
     .masthead { background-color: #212121; }
   }
 
   .accent--vidyard {
-    .accent-clr { color: #70AE44; }
-    .masthead { background-color: #70AE44; }
+    .accent-clr { color: color(vidyard); }
+    .masthead { background-color: color(vidyard); }
   }
 
   .accent--zazzle {
-    .accent-clr { color: #419AF0; }
-    .masthead { background-color: #419AF0; }
+    .accent-clr { color: color(zazzle); }
+    .masthead { background-color: color(zazzle); }
   }
 
   .btn-section-footer {

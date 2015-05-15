@@ -1,16 +1,28 @@
 .has-accent-dot,
-.has-accent-square {
+.has-accent-square,
+.has-accent-stripe {
   &.before:before,
   &.after:after {
     content: "";
     display: inline-block;
-    height: 10px;
-    width: 10px;
+    height: 8px;
+    margin-bottom: 1px;
   }
 
+  &.before:before,
+  &.after:after {
+    width: 8px;
+  }
 
-  &.before:before { margin-right: 4px; }
-  &.after:after   { margin-left: 4px; }
+  &.before:before { margin-right: 5px; }
+  &.after:after   { margin-left: 5px; }
+}
+
+.has-accent-stripe.before:before,
+.has-accent-stripe.after:after {
+  height: 9px;
+  margin-bottom: 0;
+  width: 3px;
 }
 
 .has-accent-dot {
