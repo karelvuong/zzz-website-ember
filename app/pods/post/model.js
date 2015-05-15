@@ -18,6 +18,7 @@ Post.reopenClass({
       title: 'Website Redesign',
       url: 'post.website-redesign',
       date: 'Mar 17, 2015',
+      brand: 'vidyard',
       tags: []
     },
     // {
@@ -52,6 +53,7 @@ Post.reopenClass({
       title: 'Joining Vidyard',
       url: 'post.announcement-joining-vidyard',
       date: 'May 2, 2015',
+      brand: 'vidyard',
       tags: [
         "Announcement"
       ]
@@ -61,6 +63,7 @@ Post.reopenClass({
       title: 'Styleguide',
       url: 'post.styleguide',
       date: 'May 5, 2015',
+      brand: 'personal-blue',
       tags: []
     }
   ]

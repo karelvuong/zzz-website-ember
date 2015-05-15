@@ -1,5 +1,21 @@
-<article id="article-{{model.id}}" class="accent--{{model.string}}">
-  <section class="masthead masthead--post text-center">
+<style type="text/css">
+  .header--site a {
+    color: #fff;
+  }
+
+  .header--site-twitter,
+  .header--site .header--site-list-item a {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .header--site a:hover,
+  .header--site a:focus {
+    color: #fff;
+  }
+</style>
+
+<article id="article-{{model.id}}" class="accent--personal-blue">
+  <section class="masthead masthead--post masthead--inverted text-center">
     <div class="container">
       <h1 class="masthead-title">{{model.title}}</h1>
 
@@ -28,17 +44,21 @@
       <p class="lead">This is some <strong>lead</strong> text. It is meant to stand out from the rest of the body text.</p>
 
       <p>
-        This is <strong>body</strong> text. This is what the bulk of the page will consist of. Use this to craft a story to tell to your readers. Body text can have <strong>strong</strong>, <em>emphasized</em>, and <u>underlined</u> elements to it. It can also contain <a>internal</a> and <a>external</a> links. If it is an external link, always open these in new tabs.
+        This is <strong>body</strong> text. This is what the bulk of the page will consist of. Use this to craft a story to tell to your readers. Body text can have <strong>strong</strong>, <em>emphasized</em>, and <u>underlined</u> elements to it. It can also contain <a href="/post/styleguide">internal</a> and <a href="/post/styleguide" target="_blank">external</a> links. External links will always open in new tabs.
       </p>
 
       <div class="callout">
         <p class="lead">
           Use <strong>callouts</strong> to highlight important blocks of information that you wish to stand out to the reader.
         </p>
+
+        <p>
+          Typically, they should be short and sweet to get your point across right away, but feel free to write a story if you need to.
+        </p>
       </div>
 
       <p>
-        You can also <mark>highlight</mark> text as well.
+        <mark>Text can also be highlighted</mark>. This should be used to mark multiple words of body text that should stand out to the user more than text that is strong, emphasized, or underlined.
       </p>
 
       <h2>## Heading 2</h2>
@@ -51,6 +71,9 @@
       </p>
 
       <h3>### Heading 3</h3>
+      <p>
+        If you need to section off your page further, you can add subsections to do this.
+      </p>
     </div>
   </section>
 
