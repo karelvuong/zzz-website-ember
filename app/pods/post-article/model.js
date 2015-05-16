@@ -18,7 +18,7 @@ Post.reopenClass({
       title: 'Cella',
       organization: "CrackBerry",
       url: 'http://crackberry.com/cella-blackberry-10',
-      date: 'Dec 6, 2013',
+      date: 'Dec 06, 2013',
       tags: []
     },
     {

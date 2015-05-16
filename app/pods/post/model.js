@@ -52,7 +52,7 @@ Post.reopenClass({
       id: 5,
       title: 'Joining Vidyard',
       url: 'post.announcement-joining-vidyard',
-      date: 'May 2, 2015',
+      date: 'May 02, 2015',
       brand: 'vidyard',
       tags: [
         "Announcement"
@@ -62,7 +62,7 @@ Post.reopenClass({
       id: 6,
       title: 'Styleguide',
       url: 'post.styleguide',
-      date: 'May 5, 2015',
+      date: 'May 05, 2015',
       brand: 'personal-blue',
       tags: []
     }
